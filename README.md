@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <style>
   body {
-    background-color: lightgrey;
+    background-color: #ebd8d8;
   }
 </style>
 </head>
