@@ -76,6 +76,27 @@
       padding: 8px 16px;
       margin: 0 8px;
     }
+
+      @media screen and (min-width: 768px) {
+      .container {
+        flex-direction: row;
+      }
+
+      .left-column {
+        flex: 1;
+        overflow: hidden;
+      }
+
+      .right-column {
+        flex: 1;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .navbar {
+        justify-content: flex-start;
+      }
+    }
 </style>
 </head>
 <body>
