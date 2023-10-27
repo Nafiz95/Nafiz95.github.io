@@ -32,6 +32,28 @@
     border-left: 1px solid #575151;
     height: 100%;
   }
+
+  .bar-chart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .bar-label {
+    min-width: 80px;
+  }
+
+  .bar-value {
+    background-color: #253748;
+    height: 20px;
+    margin-left: 10px;
+  }
 </style>
 </head>
 <body>
@@ -54,6 +76,27 @@
       <p><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/Nafiz95" style="text-decoration:none">Github</a></p>
       <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en" style="text-decoration:none">Google Scholar</a></p>
       <p><i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/nafiz-sadman/" style="text-decoration:none">LinkedIn</a></p>
+
+      <!-- Bar Chart -->
+    <div class="bar-chart">
+      <div class="bar">
+        <div class="bar-label">2020</div>
+        <div class="bar-value" style="width: 6em;"></div>
+      </div>
+      <div class="bar">
+        <div class="bar-label">2021</div>
+        <div class="bar-value" style="width: 14em;"></div>
+      </div>
+      <div class="bar">
+        <div class="bar-label">2022</div>
+        <div class="bar-value" style="width: 31em;"></div>
+        <div class="bar-label">31</div>
+      </div>
+      <div class="bar">
+        <div class="bar-label">2023</div>
+        <div class="bar-value" style="width: 32em;"></div>
+      </div>
+    </div>
      
       <!-- Add more content as needed -->
     </div>
