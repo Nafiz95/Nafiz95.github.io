@@ -23,10 +23,17 @@
     display: flex;
     flex-direction: row;
   }
-  .left-column, .right-column {
-    flex: 1;
-    padding: 20px;
-  }
+   .left-column {
+      flex: 1;
+      padding: 20px;
+    }
+
+   .right-column {
+      flex: 1;
+      padding: 20px;
+      height: 100%; /* Set the desired height */
+      overflow: auto; /* Enable scrolling */
+    }
 
   .divider {
     border-left: 1px solid #575151;
@@ -87,22 +94,22 @@
       <div class="bar">
         <div class="bar-label">2020</div>
         <div class="bar-value" style="width: 6em;"></div>
-        <div class="bar-label">6</div>
+        <div class="bar-label"> 6</div>
       </div>
       <div class="bar">
         <div class="bar-label">2021</div>
         <div class="bar-value" style="width: 14em;"></div>
-        <div class="bar-label">14</div>
+        <div class="bar-label"> 14</div>
       </div>
       <div class="bar">
         <div class="bar-label">2022</div>
         <div class="bar-value" style="width: 31em;"></div>
-        <div class="bar-label">31</div>
+        <div class="bar-label"> 31</div>
       </div>
       <div class="bar">
         <div class="bar-label">2023</div>
         <div class="bar-value" style="width: 32em;"></div>
-        <div class="bar-label">32</div>
+        <div class="bar-label"> 32</div>
       </div>
     </div>
      
