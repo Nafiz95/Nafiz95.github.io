@@ -1,179 +1,186 @@
 <html>
+
 <head>
-  <!-- Add the Font Awesome CDN link -->
-<!link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<script src="https://kit.fontawesome.com/5f7c4ad9f6.js" crossorigin="anonymous"></script>
-<style>
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e3e8e5;
-    font-family: "Helvetica", sans-serif;
-  }
+    <!-- Add the Font Awesome CDN link -->
+    <!link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/5f7c4ad9f6.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e3e8e5;
+            font-family: "Helvetica", sans-serif;
+        }
 
-  .circular-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-  }
+        .circular-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
 
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-   .left-column {
-      flex: 1;
-      padding: 20px;
-      height: 100%; /* Set the desired height */
-      width: 50%;
-      overflow: auto; /* Enable scrolling */
-    }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
 
-   .right-column {
-      flex: 1;
-      padding: 20px;
-      height: 100%; /* Set the desired height */
-      overflow: auto; /* Enable scrolling */
-    }
+        .left-column {
+            flex: 1;
+            padding: 20px;
+            height: 100%;
+            /* Set the desired height */
+            width: 50%;
+            overflow: auto;
+            /* Enable scrolling */
+        }
 
-  .divider {
-    border-left: 1px solid #575151;
-    height: 100%;
-  }
+        .right-column {
+            flex: 1;
+            padding: 20px;
+            height: 100%;
+            /* Set the desired height */
+            overflow: auto;
+            /* Enable scrolling */
+        }
 
-  .bar-chart {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
+        .divider {
+            border-left: 1px solid #575151;
+            height: 100%;
+        }
 
-  .bar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
 
-  .bar-label {
-    min-width: 80px;
-  }
+        .bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
 
-  .bar-value {
-    background-color: #253748;
-    height: 20px;
-    margin-left: 10px;
-  }
+        .bar-label {
+            min-width: 80px;
+        }
 
-      .navbar {
-      background-color: #253748;
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      color: white;
-    }
+        .bar-value {
+            background-color: #253748;
+            height: 20px;
+            margin-left: 10px;
+        }
 
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 16px;
-      margin: 0 8px;
-    }
+        .navbar {
+            background-color: #253748;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
 
-      @media screen and (min-width: 768px) {
-      .container {
-        flex-direction: row;
-      }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            margin: 0 8px;
+        }
 
-      .left-column {
-        flex: 1;
-        overflow: hidden;
-      }
+        @media screen and (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
 
-      .right-column {
-        flex: 1;
-        height: 100%;
-        overflow: auto;
-      }
+            .left-column {
+                flex: 1;
+                overflow: hidden;
+            }
 
-      .navbar {
-        justify-content: flex-start;
-      }
-    }
-</style>
+            .right-column {
+                flex: 1;
+                height: 100%;
+                overflow: auto;
+            }
+
+            .navbar {
+                justify-content: flex-start;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="container">
-    
-    <div class="left-column">
-      <!-- Left column content here -->
-      <div class="circular-image">
-          <img src="gittu.jpg" alt="Profile Picture" style="width: 100%; height: auto;">
-      </div>
-      <h2>NAFIZ SADMAN</h2>
-      <h3><i class="fa fa-id-badge" aria-hidden="true"></i> Graduate Research Fellow @ BAMLAB, Queen's University || NSERC CREATE Cybersecurity Awardee </h3>
-      <h4><i class="fa fa-university" aria-hidden="true"></i> MSc @ School of Computing, Queen's University</h4>
-      <h4><i class="fa fa-location-arrow" aria-hidden="true"></i> Kingston, Ontario, Canada</h4>
-      <p><i class="fa fa-envelope" aria-hidden="true"></i> email: sadman.n@queensu.ca</p>
-      <p><i class="fa fa-phone" aria-hidden="true"></i> contact: +1 438 867 7717</p>
+    <div class="container">
 
-      <hr>
-      <p><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/Nafiz95" style="text-decoration:none">Github</a></p>
-      <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en" style="text-decoration:none">Google Scholar</a></p>
-      <p><i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/nafiz-sadman/" style="text-decoration:none">LinkedIn</a></p>
-      <p><i class="fa fa-user" aria-hidden="true"></i> <a href="https://github.com/Nafiz95/Nafiz95.github.io/blob/main/NAFIZ%20SADMAN%20ACADEMIC%20RESUME%202023%20V2.pdf" style="text-decoration:none">CV</a></p>
+        <div class="left-column">
+            <!-- Left column content here -->
+            <div class="circular-image">
+                <img src="gittu.jpg" alt="Profile Picture" style="width: 100%; height: auto;">
+            </div>
+            <h2>NAFIZ SADMAN</h2>
+            <h3><i class="fa fa-id-badge" aria-hidden="true"></i> Graduate Research Fellow @ BAMLAB, Queen's University || NSERC CREATE Cybersecurity Awardee </h3>
+            <h4><i class="fa fa-university" aria-hidden="true"></i> MSc @ School of Computing, Queen's University</h4>
+            <h4><i class="fa fa-location-arrow" aria-hidden="true"></i> Kingston, Ontario, Canada</h4>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> email: sadman.n@queensu.ca</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> contact: +1 438 867 7717</p>
 
-      
-      <!-- Add more content as needed -->
+            <hr>
+            <p><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/Nafiz95" style="text-decoration:none">Github</a></p>
+            <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en" style="text-decoration:none">Google Scholar</a></p>
+            <p><i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/nafiz-sadman/" style="text-decoration:none">LinkedIn</a></p>
+            <p><i class="fa fa-user" aria-hidden="true"></i> <a href="https://github.com/Nafiz95/Nafiz95.github.io/blob/main/NAFIZ%20SADMAN%20ACADEMIC%20RESUME%202023%20V2.pdf" style="text-decoration:none">CV</a></p>
+
+
+            <!-- Add more content as needed -->
+        </div>
+        <div class="divider"></div>
+        <vr>
+            <div class="right-column">
+                <div class="navbar">
+                    <a href="#" title="Experience"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
+                    <a href="#" title="Publication"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
+                    <a href="#" title="Education"><i class="fa fa-university" aria-hidden="true"></i></a>
+                    <a href="#" title="Awards and Achievements"><i class="fa fa-trophy" aria-hidden="true"></i></a>
+                    <a href="#" title="Projects"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+                    <a href="#" title="Certifications"><i class="fa fa-certificate" aria-hidden="true"></i></a>
+                </div>
+
+                <hr>
+                <h4>Highlights</h4>
+
+                <p>Citations: 83, H-Index: 5, i10-Index: 3</p>
+
+                <!-- Bar Chart -->
+                <div class="bar-chart">
+                    <div class="bar">
+                        <div class="bar-label">2020</div>
+                        <div class="bar-value" style="width: 6em;"></div>
+                        <div class="bar-label"> 6</div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-label">2021</div>
+                        <div class="bar-value" style="width: 14em;"></div>
+                        <div class="bar-label"> 14</div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-label">2022</div>
+                        <div class="bar-value" style="width: 31em;"></div>
+                        <div class="bar-label"> 31</div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-label">2023</div>
+                        <div class="bar-value" style="width: 32em;"></div>
+                        <div class="bar-label"> 32</div>
+                    </div>
+                </div>
+
+                <p><i class="fa fa-bullseye" aria-hidden="true"></i> Conference Paper Accepted at 2023 IEEE SSCI (CICS)!</p>
+
+            </div>
+
     </div>
-     <div class="divider"></div>
-    <vr>
-    <div class="right-column">
-      <div class="navbar">
-        <a href="#" title="Experience"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
-        <a href="#"title="Publication"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
-        <a href="#"title="Education"><i class="fa fa-university" aria-hidden="true"></i></a>
-        <a href="#"title="Awards and Achievements"><i class="fa fa-trophy" aria-hidden="true"></i></a>
-        <a href="#"title="Projects"><i class="fa fa-laptop" aria-hidden="true"></i></a>
-        <a href="#"title="Certifications"><i class="fa fa-certificate" aria-hidden="true"></i></a>
-      </div>
-      
-     <hr>
-      <h4>Highlights</h4>
 
-      <p>Citations: 83, H-Index: 5, i10-Index: 3</p>
-
-      <!-- Bar Chart -->
-    <div class="bar-chart">
-      <div class="bar">
-        <div class="bar-label">2020</div>
-        <div class="bar-value" style="width: 6em;"></div>
-        <div class="bar-label"> 6</div>
-      </div>
-      <div class="bar">
-        <div class="bar-label">2021</div>
-        <div class="bar-value" style="width: 14em;"></div>
-        <div class="bar-label"> 14</div>
-      </div>
-      <div class="bar">
-        <div class="bar-label">2022</div>
-        <div class="bar-value" style="width: 31em;"></div>
-        <div class="bar-label"> 31</div>
-      </div>
-      <div class="bar">
-        <div class="bar-label">2023</div>
-        <div class="bar-value" style="width: 32em;"></div>
-        <div class="bar-label"> 32</div>
-      </div>
-    </div>
-
-      <p><i class="fa fa-bullseye" aria-hidden="true"></i> Conference Paper Accepted at 2023 IEEE SSCI (CICS)!</p>
-      
-    </div>
-      
-</div>
-  
 
 
 
