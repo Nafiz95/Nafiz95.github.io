@@ -5,106 +5,67 @@
     <!link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://kit.fontawesome.com/5f7c4ad9f6.js" crossorigin="anonymous"></script>
     <style>
-        body {
-            display: flex;
-            overflow: hidden; 
-            align-items: center;
-            background-color: #e3e8e5;
-            font-family: "Helvetica", sans-serif;
-        }
+    body {
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        background-color: #e3e8e5;
+        font-family: "Helvetica", sans-serif;
+    }
 
-        .circular-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+    }
 
+    .left-column {
+        flex: 1;
+        padding: 20px;
+        overflow: auto;
+        background-color: #ffffff;
+    }
+
+    .right-column {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+        background-color: #f7f7f7;
+    }
+
+    .divider {
+        border-left: 1px solid #575151;
+        height: auto;
+    }
+
+    .navbar {
+        background-color: #253748;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        margin: 0 8px;
+    }
+
+    @media screen and (max-width: 768px) {
         .container {
-            display: flex;
-            flex-direction: row;
-        }
-
-         .left-column {
-            flex: 1;
-            padding: 20px;
-            height: 100vh; /* Set the desired height */
-            width:55vh;
-            overflow: hidden; /* Enable scrolling */
-            position: relative;
-        }
-
-        .right-column {
-            flex: 1;
-            padding: 20px;
-            height: 100vh; /* Set the desired height */
-            overflow: auto; /* Enable scrolling */
-            position: fixed;
+            flex-direction: column;
         }
 
         .divider {
-            border-left: 1px solid #575151;
-            height: 100%;
+            display: none;
         }
+    }
+</style>
 
-        .bar-chart {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-        }
-
-        .bar {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .bar-label {
-            min-width: 80px;
-        }
-
-        .bar-value {
-            background-color: #253748;
-            height: 20px;
-            margin-left: 10px;
-        }
-
-        .navbar {
-            background-color: #253748;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            margin: 0 8px;
-        }
-
-        @media screen and (min-width: 768px) {
-            .container {
-                flex-direction: row;
-            }
-
-            .left-column {
-                flex: 1;
-                overflow: hidden;
-            }
-
-            .right-column {
-                flex: 1;
-                height: 100%;
-                overflow: auto;
-            }
-
-            .navbar {
-                justify-content: flex-start;
-            }
-        }
-    </style>
 </head>
 
 <body>
