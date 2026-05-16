@@ -1,0 +1,32 @@
+name: Sync Scholar Stats
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # daily at 06:00 UTC
+  workflow_dispatch:        # allow manual trigger from GitHub Actions UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install scholarly
+
+      - name: Fetch Scholar stats
+        run: python scripts/fetch_scholar.py > data/scholar.json
+        # NOTE: scholarly may hit CAPTCHA rate-limits from GitHub Actions IPs.
+        # If it fails, update data/scholar.json manually and push.
+        # TODO: consider using a proxy (e.g. ScraperAPI) or scholarly's
+        #   use_proxy() method if CAPTCHAs become a recurring issue.
+
+      - name: Commit updated stats
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: sync scholar stats"
+          file_pattern: data/scholar.json

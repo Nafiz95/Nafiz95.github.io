@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Publications — Nafiz Sadman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Publications by Nafiz Sadman — PhD candidate at Queen's University, School of Computing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="site-shell">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div>
+      <div class="brand-name">nafiz.sadman</div>
+      <div class="brand-path">~/publications</div>
+    </div>
+
+    <div>
+      <div class="sidebar-eyebrow">PAGES</div>
+      <nav class="sidebar-nav-list">
+        <a href="index.html"        class="nav-item">· home</a>
+        <a href="publications.html" class="nav-item active">▸ publications</a>
+        <a href="projects.html"     class="nav-item">· projects</a>
+        <a href="cv.html"           class="nav-item">· cv</a>
+      </nav>
+    </div>
+
+    <div>
+      <div class="sidebar-eyebrow">LINKS</div>
+      <div class="sidebar-links">
+        <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">↗ scholar</a>
+        <a href="https://github.com/Nafiz95"                                    target="_blank" rel="noopener noreferrer">↗ github</a>
+        <a href="https://www.linkedin.com/in/nafiz-sadman/"                    target="_blank" rel="noopener noreferrer">↗ linkedin</a>
+        <a href="mailto:sadman.n@queensu.ca">↗ email</a>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <div>Kingston, ON · © 2026</div>
+      <div class="built">built with care</div>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main-content">
+
+    <!-- Page header -->
+    <div class="page-header">
+      <div>
+        <div class="eyebrow eyebrow--red">// Publications</div>
+        <h1>Publications</h1>
+        <div class="subtitle">
+          12 first-authored papers across KDD, ICML, BioKDD, NFM, ICC, CICS — 187 citations on Scholar (live).
+        </div>
+      </div>
+      <div>
+        <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en"
+           target="_blank" rel="noopener noreferrer"
+           class="ext-link ext-link--red">Google Scholar ↗</a>
+      </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="stats-strip-4">
+      <div class="card card--tinted-red stat-tile stat-tile--red">
+        <div class="eyebrow eyebrow--red">Citations · live</div>
+        <div class="stat-row">
+          <span class="stat-number" data-countup="187">0</span>
+          <div class="sparkline">
+            <svg viewBox="0 0 120 30" preserveAspectRatio="none">
+              <polyline points="0,26 14,24 28,21 42,22 56,16 70,15 84,9 96,11 108,5 120,3"
+                        fill="none" stroke="#9d1939" stroke-width="1.5"/>
+              <polyline points="0,26 14,24 28,21 42,22 56,16 70,15 84,9 96,11 108,5 120,3 120,30 0,30"
+                        fill="#9d1939" opacity="0.12" stroke="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="stat-sub" style="color:#9d1939">synced 2026-05-12</div>
+      </div>
+      <div class="card card--tinted-blue stat-tile stat-tile--blue">
+        <div class="eyebrow eyebrow--blue">h-index</div>
+        <div class="stat-row">
+          <span class="stat-number" data-countup="7">0</span>
+        </div>
+      </div>
+      <div class="card card--tinted-gold stat-tile stat-tile--gold">
+        <div class="eyebrow eyebrow--gold">i10-index</div>
+        <div class="stat-row">
+          <span class="stat-number" data-countup="6">0</span>
+        </div>
+      </div>
+      <div class="card stat-tile stat-tile--ink">
+        <div class="eyebrow eyebrow--ink">1st-auth papers</div>
+        <div class="stat-row">
+          <span class="stat-number" data-countup="12">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar" id="pub-filter-bar">
+      <span class="filter-label">FILTER ↓</span>
+      <span class="chip chip--red chip--clickable active"  data-filter="all">all</span>
+      <span class="chip chip--ink chip--clickable" data-filter="XAI">XAI</span>
+      <span class="chip chip--ink chip--clickable" data-filter="VLM">VLM</span>
+      <span class="chip chip--ink chip--clickable" data-filter="cybersecurity">cybersecurity</span>
+      <span class="chip chip--ink chip--clickable" data-filter="comp-bio">comp-bio</span>
+      <span class="chip chip--ink chip--clickable" data-filter="biometrics">biometrics</span>
+      <span class="chip chip--ink chip--clickable" data-filter="tools">tools</span>
+      <span class="chip chip--ink chip--clickable" data-filter="visualization">visualization</span>
+      <span class="filter-count">
+        showing <b id="pub-showing-count">5</b> · plus 8 earlier papers on
+        <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en"
+           target="_blank" style="color:#9d1939">Scholar ↗</a>
+      </span>
+    </div>
+
+    <!-- ── YEAR 2026 ── -->
+    <div class="year-group" id="year-2026">
+      <div class="year-header">
+        <div class="year-number">2026</div>
+        <div class="year-rule"></div>
+        <div class="year-count">1 paper</div>
+      </div>
+      <div class="pub-list">
+
+        <!-- DepthPulse+ -->
+        <div class="card card--p0 pub-card" data-pub-tags="cybersecurity,biometrics,first-author">
+          <div class="pub-card-inner">
+            <div class="pub-stripe" style="background:#9d1939"></div>
+            <div class="pub-body">
+              <div class="pub-title-row">
+                <div class="pub-title">DepthPulse+: A Depth and Vital Sign Based Method for Face Presentation Attack Detection</div>
+                <div class="pub-venue-badge" style="color:#9d1939">IEEE ICC'26</div>
+              </div>
+              <div class="pub-authors">
+                <span style="font-weight:700; color:#9d1939">Nafiz Sadman</span>,
+                Furkan Alaca, Farhana Zulkernine
+                <span style="margin-left:8px; color:#888">· IEEE International Conference on Communications — CISS Track</span>
+              </div>
+              <div class="pub-footer">
+                <span class="chip chip--ink">cybersecurity</span>
+                <span class="chip chip--ink">biometrics</span>
+                <span class="chip chip--red active">first author</span>
+                <span style="flex:1"></span>
+                <button class="pub-abstract-toggle" style="color:#9d1939">▸ show abstract</button>
+                <a href="#" class="ext-link ext-link--red">paper ↗</a>
+                <a href="#" class="ext-link ext-link--ink">code ↗</a>
+                <a href="#" class="ext-link ext-link--ink">bib ↗</a>
+              </div>
+              <div class="pub-abstract-panel" style="background:rgba(157,25,57,0.05)">
+                <div class="eyebrow eyebrow--red" style="margin-bottom:6px">Abstract</div>
+                Combines depth maps and remote photoplethysmography (rPPG) signals to detect face presentation attacks (print, replay, mask) on commodity cameras. Improves accuracy under cross-device evaluation.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── YEAR 2025 ── -->
+    <div class="year-group" id="year-2025">
+      <div class="year-header">
+        <div class="year-number">2025</div>
+        <div class="year-rule"></div>
+        <div class="year-count">3 papers</div>
+      </div>
+      <div class="pub-list">
+
+        <!-- BiomedCLIP -->
+        <div class="card card--p0 pub-card" data-pub-tags="XAI,VLM,comp-bio,first-author">
+          <div class="pub-card-inner">
+            <div class="pub-stripe" style="background:#11335d"></div>
+            <div class="pub-body">
+              <div class="pub-title-row">
+                <div class="pub-title">Interpreting Biomedical VLMs on High-Imbalance Out-of-Distributions: An Insight into BiomedCLIP on Radiology</div>
+                <div class="pub-venue-badge" style="color:#11335d">BioKDD'25</div>
+              </div>
+              <div class="pub-authors">
+                <span style="font-weight:700; color:#11335d">Nafiz Sadman</span>,
+                Farhana Zulkernine, Benjamin Kwan
+                <span style="margin-left:8px; color:#888">· 24th International Workshop on Data Mining in Bioinformatics</span>
+              </div>
+              <div class="pub-footer">
+                <span class="chip chip--ink">XAI</span>
+                <span class="chip chip--ink">VLM</span>
+                <span class="chip chip--ink">comp-bio</span>
+                <span class="chip chip--blue active">first author</span>
+                <span style="flex:1"></span>
+                <button class="pub-abstract-toggle" style="color:#11335d">▸ show abstract</button>
+                <a href="#" class="ext-link ext-link--blue">paper ↗</a>
+                <a href="#" class="ext-link ext-link--ink">code ↗</a>
+                <a href="#" class="ext-link ext-link--ink">bib ↗</a>
+              </div>
+              <div class="pub-abstract-panel" style="background:rgba(17,51,93,0.05)">
+                <div class="eyebrow eyebrow--blue" style="margin-bottom:6px">Abstract</div>
+                Probes BiomedCLIP behaviour on imbalanced out-of-distribution radiology data, uses GradCAM-based interpretability to surface failure modes, and proposes evaluation harnesses for clinical robustness.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Temporal Viz -->
+        <div class="card card--p0 pub-card" data-pub-tags="visualization,tools,first-author">
+          <div class="pub-card-inner">
+            <div class="pub-stripe" style="background:#8a6a10"></div>
+            <div class="pub-body">
+              <div class="pub-title-row">
+                <div class="pub-title">Visualizing Temporal Interval Hierarchies</div>
+                <div class="pub-venue-badge" style="color:#8a6a10">NFM'25</div>
+              </div>
+              <div class="pub-authors">
+                <span style="font-weight:700; color:#8a6a10">Nafiz Sadman</span>,
+                Niklas Kienersi, Sean Kauffman
+                <span style="margin-left:8px; color:#888">· 17th NASA Formal Methods Symposium</span>
+              </div>
+              <div class="pub-footer">
+                <span class="chip chip--ink">visualization</span>
+                <span class="chip chip--ink">tools</span>
+                <span class="chip chip--gold active">first author</span>
+                <span style="flex:1"></span>
+                <button class="pub-abstract-toggle" style="color:#8a6a10">▸ show abstract</button>
+                <a href="#" class="ext-link ext-link--gold">paper ↗</a>
+                <a href="#" class="ext-link ext-link--ink">code ↗</a>
+                <a href="#" class="ext-link ext-link--ink">bib ↗</a>
+              </div>
+              <div class="pub-abstract-panel" style="background:rgba(199,154,30,0.12)">
+                <div class="eyebrow eyebrow--gold" style="margin-bottom:6px">Abstract</div>
+                A visualization research tool for streaming data from PID controllers — Python Socket IO + D3, exposes temporal interval hierarchies for live formal-methods analysis.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alzheimer's Pfizer -->
+        <div class="card card--p0 pub-card" data-pub-tags="comp-bio,EHR,co-author">
+          <div class="pub-card-inner">
+            <div class="pub-stripe" style="background:#1a1a1a"></div>
+            <div class="pub-body">
+              <div class="pub-title-row">
+                <div class="pub-title">Diagnosis and management of Alzheimer's disease in primary care: a real-world study in Ontario, Canada</div>
+                <div class="pub-venue-badge" style="color:#1a1a1a">JPCCH</div>
+              </div>
+              <div class="pub-authors">
+                (Pfizer team), <span style="font-weight:700; color:#1a1a1a">Nafiz Sadman</span>, (et al.)
+                <span style="margin-left:8px; color:#888">· Journal of Primary Care and Community Health</span>
+              </div>
+              <div class="pub-footer">
+                <span class="chip chip--ink">comp-bio</span>
+                <span class="chip chip--ink">EHR</span>
+                <span class="chip chip--ink">co-author</span>
+                <span style="flex:1"></span>
+                <button class="pub-abstract-toggle" style="color:#1a1a1a">▸ show abstract</button>
+                <a href="#" class="ext-link ext-link--ink">paper ↗</a>
+                <a href="#" class="ext-link ext-link--ink">bib ↗</a>
+              </div>
+              <div class="pub-abstract-panel" style="background:var(--paper-2)">
+                <div class="eyebrow eyebrow--ink" style="margin-bottom:6px">Abstract</div>
+                Real-world Ontario EHR study of Alzheimer's diagnosis &amp; management pathways. My contribution: EHR extraction, k-means clustering, logistic regression.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── YEAR 2023 ── -->
+    <div class="year-group" id="year-2023">
+      <div class="year-header">
+        <div class="year-number">2023</div>
+        <div class="year-rule"></div>
+        <div class="year-count">1 paper</div>
+      </div>
+      <div class="pub-list">
+
+        <!-- InsightFace -->
+        <div class="card card--p0 pub-card" data-pub-tags="cybersecurity,adversarial,first-author">
+          <div class="pub-card-inner">
+            <div class="pub-stripe" style="background:#9d1939"></div>
+            <div class="pub-body">
+              <div class="pub-title-row">
+                <div class="pub-title">Vulnerability of Open-source Face Recognition Systems to Blackbox Attacks: A Case Study with InsightFace</div>
+                <div class="pub-venue-badge" style="color:#9d1939">IEEE CICS</div>
+              </div>
+              <div class="pub-authors">
+                <span style="font-weight:700; color:#9d1939">Nafiz Sadman</span>,
+                K. A. Hasan, E. Rashno, F. Alaca, Y. Tian, F. Zulkernine
+                <span style="margin-left:8px; color:#888">· IEEE Symposium on Computational Intelligence in Cyber Security</span>
+              </div>
+              <div class="pub-footer">
+                <span class="chip chip--ink">cybersecurity</span>
+                <span class="chip chip--ink">adversarial</span>
+                <span class="chip chip--red active">first author</span>
+                <span style="flex:1"></span>
+                <button class="pub-abstract-toggle" style="color:#9d1939">▸ show abstract</button>
+                <a href="#" class="ext-link ext-link--red">paper ↗</a>
+                <a href="#" class="ext-link ext-link--ink">code ↗</a>
+                <a href="#" class="ext-link ext-link--ink">bib ↗</a>
+              </div>
+              <div class="pub-abstract-panel" style="background:rgba(157,25,57,0.05)">
+                <div class="eyebrow eyebrow--red" style="margin-bottom:6px">Abstract</div>
+                Blackbox attack case study on InsightFace, showing transferability of perturbations across open-source face recognition systems.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── EARLIER PAPERS ── -->
+    <div class="earlier-card">
+      <div class="card card--tinted-ink">
+        <div class="eyebrow eyebrow--ink">Earlier · 2019 – 2022</div>
+        <div class="earlier-title">
+          8 additional first-authored papers across KDD · ICML · ICMLA · SSCI · ICSOFT · ICSEA · CCWC
+        </div>
+        <div class="earlier-body">
+          Earlier work — ML for HR analytics, stylometric authorship attribution, deep RL recommender systems,
+          and speech recognition. Full list with PDFs on
+          <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en"
+             target="_blank" style="color:#9d1939; font-weight:600">Google Scholar ↗</a>.
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,229 +1,204 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Add the Font Awesome CDN link -->
-    <!link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://kit.fontawesome.com/5f7c4ad9f6.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            display: flex;
-            overflow: hidden; 
-            align-items: center;
-            background-color: #e3e8e5;
-            font-family: "Helvetica", sans-serif;
-        }
-
-        .circular-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: row;
-        }
-
-         .left-column {
-            flex: 1;
-            padding: 20px;
-            height: 100vh; /* Set the desired height */
-            width:55vh;
-            overflow: hidden; /* Enable scrolling */
-            position: relative;
-        }
-
-        .right-column {
-            flex: 1;
-            padding: 20px;
-            height: 100vh; /* Set the desired height */
-            overflow: auto; /* Enable scrolling */
-            position: fixed;
-        }
-
-        .divider {
-            border-left: 1px solid #575151;
-            height: 100%;
-        }
-
-        .bar-chart {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-        }
-
-        .bar {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .bar-label {
-            min-width: 80px;
-        }
-
-        .bar-value {
-            background-color: #253748;
-            height: 20px;
-            margin-left: 10px;
-        }
-
-        .navbar {
-            background-color: #253748;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            margin: 0 8px;
-        }
-
-        @media screen and (min-width: 768px) {
-            .container {
-                flex-direction: row;
-            }
-
-            .left-column {
-                flex: 1;
-                overflow: hidden;
-            }
-
-            .right-column {
-                flex: 1;
-                height: 100%;
-                overflow: auto;
-            }
-
-            .navbar {
-                justify-content: flex-start;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Nafiz Sadman — PhD Candidate, Queen's Computing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PhD candidate working on interpretable, transferable, and explainable VLMs for radiology. Queen's University, School of Computing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
-
 <body>
+<div class="site-shell">
 
-    <div class="container">
-
-        <div class="left-column">
-            <!-- Left column content here -->
-            <div class="circular-image">
-                <img src="gittu.jpg" alt="Profile Picture" style="width: 100%; height: auto;">
-            </div>
-            <h2>NAFIZ SADMAN</h2>
-            <h4><i class="fa fa-university" aria-hidden="true"></i> CS Ph.D. @ School of Computing, Queen's University || Since Sept 2024</h4>
-            <h4><i class="fa fa-university" aria-hidden="true"></i> M.Sc. @ School of Computing, Queen's University || Sept 2022 - Aug 2024</h4>
-            <h4><i class="fa fa-location-arrow" aria-hidden="true"></i> Kingston, Ontario, Canada</h4>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> email: sadman.n@queensu.ca</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i> contact: +1 438 867 7717</p>
-
-            <hr>
-            <p><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/Nafiz95" style="text-decoration:none">Github</a></p>
-            <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en" style="text-decoration:none">Google Scholar</a></p>
-            <p><i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/nafiz-sadman/" style="text-decoration:none">LinkedIn</a></p>
-            <p><i class="fa fa-user" aria-hidden="true"></i> <a href="https://github.com/Nafiz95/Nafiz95.github.io/blob/main/NAFIZ%20SADMAN%20RESUME%20V5.pdf" style="text-decoration:none">CV</a></p>
-
-
-            <!-- Add more content as needed -->
-        </div>
-        <div class="divider"></div>
-        <vr>
-            <div class="right-column">
-<!--                 <div class="navbar">
-                    <a href="#" title="Experience"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
-                    <a href="#" title="Publication"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
-                    <a href="#" title="Education"><i class="fa fa-university" aria-hidden="true"></i></a>
-                    <a href="#" title="Awards and Achievements"><i class="fa fa-trophy" aria-hidden="true"></i></a>
-                    <a href="#" title="Projects"><i class="fa fa-laptop" aria-hidden="true"></i></a>
-                    <a href="#" title="Certifications"><i class="fa fa-certificate" aria-hidden="true"></i></a>
-                </div>
-                 -->
-                <hr>
-                <h2>What's Up!?</h2>
-                 <p></p><i class="fa-solid fa-bell"> </i> Dec 2024: Cross-affiliated with School of Computing and School of Rehabilitation Therapy, Queen’s University to work on automated literature analysis!</p>
-                 <p><i class="fa-solid fa-bell"></i> Sept 2024: Started Ph.D. in Computing from School of Computing, Queen's University! Supervised by Professor Farhana Zulkernine!</p>
-                 <p><i class="fa-solid fa-bell"> </i> Aug 2024: Graduated with Masters in Computing from School of Computing, Queen's University!</p>
-                <hr>
-
-
-                <h2><i class="fa-brands fa-google-scholar"></i> Research Experience</h2>
-                 
-                    <p><i class="fa-solid fa-arrows-to-dot"></i><em><strong> HealthSci Research Assistant</strong> (Dec 2024 - Present)</em></p>
-                    <p><em>Cross Affiliation with School of Computing and School of Rehabilitation Therapy, Queen’s University</em></p>                                                                                  
-                    <p><em>Supervisor: Professor Farhana Zulkernine, Ph.D., P.Eng and Assoc Professor Nora Fayed, Ph.D.</em></p>
-                    <p>Conduct research on:</p>
-                    <ul>
-                      <li> Surveying automated systematic literature review.</li>
-                      <li> Advanced NLP algorithm for relevant article screening and article classification</li>
-                      </ul>
-                 
-                    <p><i class="fa-solid fa-arrows-to-dot"></i><em><strong> Graduate Research Assistant</strong> (Sept 2022 - Present)</em></p>
-                    <p><em>Big Data Analytics and Management Lab, School of Computing, Queen’s University</em>
-                    <p><em>Supervisor: Professor Farhana Zulkernine, Ph.D.</em></p>
-                    <p>Conduct research on:</p>
-                    <ul>
-                      <li> Liveness detection in face authentication.</li>
-                      <li> Explainability in multimodal AI with vision-language models.</li>
-                      </ul>
-                
-                    <p><i class="fa-solid fa-arrows-to-dot"></i><em><strong> Research Intern</strong> (Oct 2022 - Feb 2023)</em></p>
-                        <p><em>MITACS Accelerate Intern - Pfizer Canada</em>
-                        <ul>
-                          <li> Extracted, transformed, and analyzed Electronic Health Records to understand patient clinical characteristics,
-demographics, and comorbidities using Pandas, mySQL, numpy, sklearn, and visualization with seaborn.
-</li>
-                          <li> Conducted statistical prediction with k-means clustering and logistic regression.</li>
-                          </ul>
-
-                <hr>
-
-                <h2><i class="fa-brands fa-connectdevelop"></i> Industry Experience</h2>
-                 
-                    <p><i class="fa-solid fa-arrows-to-dot"></i><em><strong> Front-end Developer</strong> (Jan 2024 - Present)</em></p>
-                    <p><em>Smith School of Electrical and Computer Engineering, Queen’s University</em></p>                                                                                  
-                    
-                    <ul>
-                      <li> Develop a visualization research tool for streaming data from PID controllers using: Python Socket IO, HTML5, CSS3, JavaScript.</li>
-                      <li> Document tool for paper publication on tools (submitted to NFM2025).</li>
-                      </ul>
-                 
-                    <p><i class="fa-solid fa-arrows-to-dot"></i><em><strong> Machine Learning Engineer </strong> (Aug 2019 - Jul 2022)</em></p>
-                    <p><em>Silicon Orchard Ltd ,Dhaka, Bangladesh</em>
-                    <p>Conduct research on:</p>
-                    <ul>
-                      <li> Built an internal HR data analytics tool based on text data using NLP techniques.</li>
-                      <li> Developed a Stylometric Analysis algorithm for Authorship Attribution.</li>
-                      <li>Developed a deep Reinforcement Learning algorithms for recommendation systems.</li>
-                      <li>Developed speech recognition algorithm for smart home systems.</li>
-                      <li>Exhibited efficient team management and software development in Django.</li>
-                    </ul>
-
-                <hr>
-
-                <h2><i class="fa-solid fa-user-plus"></i> Other Experience</h2>
-                <p><i class="fa-solid fa-arrows-to-dot"></i><em><strong> Graduate Teaching Assistant</strong> (Jan 2023 - Present)</em></p>
-                    <p><em>School of Computing, Queen’s University</em></p>                                                                                  
-                    <p>Several 200s,300s and 400s CISC courses in AI and Software Engineering.</p>    
-
-                <hr>
-
-                <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
-                <p><i class="fa-solid fa-arrows-to-dot"></i><em><strong> Deep Learning by DeepLearning.AI</em></p>
-                <p><i class="fa-solid fa-arrows-to-dot"></i><em><strong> TensorFlow in Practice by DeepLearning.AI</em></p>
-                    
-                <hr>
-                <hr>
-            </div>
-
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div>
+      <div class="brand-name">nafiz.sadman</div>
+      <div class="brand-path">~/home</div>
     </div>
 
+    <div>
+      <div class="sidebar-eyebrow">PAGES</div>
+      <nav class="sidebar-nav-list">
+        <a href="index.html"        class="nav-item active">▸ home</a>
+        <a href="publications.html" class="nav-item">· publications</a>
+        <a href="projects.html"     class="nav-item">· projects</a>
+        <a href="cv.html"           class="nav-item">· cv</a>
+      </nav>
+    </div>
 
+    <!-- LINKS hidden on home -->
 
+    <div class="sidebar-footer">
+      <div>Kingston, ON · © 2026</div>
+      <div class="built">built with care</div>
+    </div>
+  </aside>
 
+  <!-- ===== MAIN ===== -->
+  <main class="main-content">
+    <div class="home-grid">
+
+      <!-- ── PROFILE CARD ── -->
+      <div class="card card--hover profile-card">
+        <div class="profile-photo">
+          <img src="gittu.jpg" alt="Nafiz Sadman">
+        </div>
+        <div class="profile-body">
+          <div class="profile-name">Nafiz Sadman</div>
+          <div class="profile-role">PhD Candidate · Queen's Computing</div>
+          <div class="profile-affil">
+            BAM Lab — Big Data Analytics &amp; Management<br>
+            📍 Kingston, ON, Canada
+          </div>
+          <div class="profile-links">
+            <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en"
+               target="_blank" rel="noopener noreferrer"
+               class="ext-link ext-link--red">scholar ↗</a>
+            <a href="https://github.com/Nafiz95"
+               target="_blank" rel="noopener noreferrer"
+               class="ext-link ext-link--blue">github ↗</a>
+            <a href="https://www.linkedin.com/in/nafiz-sadman/"
+               target="_blank" rel="noopener noreferrer"
+               class="ext-link ext-link--gold">linkedin ↗</a>
+            <a href="mailto:sadman.n@queensu.ca"
+               class="ext-link ext-link--ink">✉ email ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── RESEARCH FOCUS ── -->
+      <div class="card research-focus-card">
+        <div class="eyebrow eyebrow--red">Research Focus</div>
+        <div class="research-headline">
+          <span style="color:#9d1939">Interpretable</span>,
+          <span style="color:#11335d">transferable</span>, and explainable
+          <span style="border-bottom:2px solid #c79a1e; padding-bottom:1px">VLMs</span> for radiology.
+        </div>
+        <div class="research-sub">
+          XAI in vision &amp; NLP · biomedical applications · face presentation-attack detection.
+          Previously at Pfizer Canada and EvenUp Law.
+        </div>
+        <div class="chip-row" style="margin-top:14px">
+          <span class="chip chip--red">XAI</span>
+          <span class="chip chip--blue">VLM</span>
+          <span class="chip chip--gold">Radiology</span>
+          <span class="chip chip--ink">Cybersecurity</span>
+          <span class="chip chip--ink">Reinforcement Learning</span>
+          <span class="chip chip--ink">Comp-Bio</span>
+        </div>
+      </div>
+
+      <!-- ── STATS TRIPLET ── -->
+      <div class="stat-triplet">
+        <!-- Citations -->
+        <div class="card card--tinted-red stat-tile stat-tile--red">
+          <div class="eyebrow eyebrow--red">Citations · live</div>
+          <div class="stat-row">
+            <span class="stat-number" data-countup="187">0</span>
+            <div class="sparkline">
+              <svg viewBox="0 0 120 30" preserveAspectRatio="none">
+                <polyline points="0,26 14,24 28,21 42,22 56,16 70,15 84,9 96,11 108,5 120,3"
+                          fill="none" stroke="#9d1939" stroke-width="1.5"/>
+                <polyline points="0,26 14,24 28,21 42,22 56,16 70,15 84,9 96,11 108,5 120,3 120,30 0,30"
+                          fill="#9d1939" opacity="0.12" stroke="none"/>
+              </svg>
+            </div>
+          </div>
+          <div class="stat-sub" style="color:#9d1939">Scholar · synced 2026-05-12</div>
+        </div>
+        <!-- h-index -->
+        <div class="card card--tinted-blue stat-tile stat-tile--blue">
+          <div class="eyebrow eyebrow--blue">h-index</div>
+          <div class="stat-row">
+            <span class="stat-number" data-countup="7">0</span>
+          </div>
+        </div>
+        <!-- 1st-auth -->
+        <div class="card card--tinted-gold stat-tile stat-tile--gold">
+          <div class="eyebrow eyebrow--gold">1st-auth papers</div>
+          <div class="stat-row">
+            <span class="stat-number" data-countup="12">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── RECENT PUBLICATIONS ── -->
+      <div class="card recent-pubs-card">
+        <div class="recent-pubs-header">
+          <div class="eyebrow eyebrow--ink">Recent Publications</div>
+          <a href="publications.html" class="see-all">see all →</a>
+        </div>
+        <div>
+          <a href="publications.html" class="recent-pubs-row">
+            <span class="recent-pub-year" style="color:#9d1939">2026</span>
+            <span class="recent-pub-title">DepthPulse+: A Depth and Vital Sign Based Method for Face Presentation Attack Detection</span>
+            <span class="recent-pub-venue">IEEE ICC'26</span>
+          </a>
+          <a href="publications.html" class="recent-pubs-row">
+            <span class="recent-pub-year" style="color:#11335d">2025</span>
+            <span class="recent-pub-title">Interpreting Biomedical VLMs on High-Imbalance Out-of-Distributions: An Insight into BiomedCLIP on Radiology</span>
+            <span class="recent-pub-venue">BioKDD'25</span>
+          </a>
+          <a href="publications.html" class="recent-pubs-row">
+            <span class="recent-pub-year" style="color:#8a6a10">2025</span>
+            <span class="recent-pub-title">Visualizing Temporal Interval Hierarchies</span>
+            <span class="recent-pub-venue">NFM'25</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ── NOW ── -->
+      <div class="card now-card">
+        <div class="eyebrow eyebrow--ink">Now · May 2026</div>
+        <ul class="now-list">
+          <li>Back at Queen's after the EvenUp Law ML internship</li>
+          <li>Writing thesis chapter on biomedical VLM interpretability</li>
+          <li>Preparing the ICC'26 talk for DepthPulse+</li>
+        </ul>
+      </div>
+
+      <!-- ── FEATURED PROJECTS ── -->
+      <div class="card featured-projects-card">
+        <div class="featured-projects-header">
+          <div class="eyebrow eyebrow--ink">Featured Projects</div>
+          <a href="projects.html" class="see-all">see all →</a>
+        </div>
+        <div class="proj-thumb-grid">
+          <a href="projects.html" class="proj-thumb">
+            <div class="proj-thumb-img"
+                 style="background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(0,0,0,0.05) 6px 7px), rgba(157,25,57,0.08)"></div>
+            <div class="proj-thumb-title" style="color:#9d1939">XAI on Biomedical VLMs</div>
+            <div class="proj-thumb-area">Computational Biology</div>
+          </a>
+          <a href="projects.html" class="proj-thumb">
+            <div class="proj-thumb-img"
+                 style="background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(0,0,0,0.05) 6px 7px), rgba(17,51,93,0.08)"></div>
+            <div class="proj-thumb-title" style="color:#11335d">DepthPulse+ · Liveness Detection</div>
+            <div class="proj-thumb-area">Biometrics &amp; Cybersecurity</div>
+          </a>
+          <a href="projects.html" class="proj-thumb">
+            <div class="proj-thumb-img"
+                 style="background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(0,0,0,0.05) 6px 7px), rgba(199,154,30,0.10)"></div>
+            <div class="proj-thumb-title" style="color:#8a6a10">RL for Imbalanced Biomedical Classification</div>
+            <div class="proj-thumb-area">Reinforcement Learning</div>
+          </a>
+          <a href="projects.html" class="proj-thumb">
+            <div class="proj-thumb-img"
+                 style="background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(0,0,0,0.05) 6px 7px), rgba(157,25,57,0.08)"></div>
+            <div class="proj-thumb-title" style="color:#9d1939">Multi-task Classifier Group Selection</div>
+            <div class="proj-thumb-area">Combinatorial Optimization</div>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- .home-grid -->
+  </main>
+
+</div><!-- .site-shell -->
+<script src="assets/site.js"></script>
 </body>
+</html>
