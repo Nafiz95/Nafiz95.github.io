@@ -1,204 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Nafiz Sadman — PhD Candidate, Queen's Computing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PhD candidate working on interpretable, transferable, and explainable VLMs for radiology. Queen's University, School of Computing.">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="description" content="Nafiz Sadman is a PhD researcher in medical vision-language models, long-tailed radiology, and interpretable, reliable machine learning.">
+  <title>Home — Nafiz Sadman</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<div class="site-shell">
-
-  <!-- ===== SIDEBAR ===== -->
-  <aside class="sidebar">
-    <div>
-      <div class="brand-name">nafiz.sadman</div>
-      <div class="brand-path">~/home</div>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav aria-label="Primary"><div class="wrap nav">
+  <a class="brand" href="index.html">Nafiz Sadman</a>
+  <button class="menu" type="button" aria-controls="site-links" aria-expanded="false">Menu</button>
+  <div class="navlinks" id="site-links">
+    <a aria-current="page" href="index.html">Overview</a>
+    <a data-page="research" href="research.html">Research &amp; Publication</a>
+    <a data-page="experience" href="experience.html">Experience</a>
+    <a data-page="about" href="about.html">About</a>
+    <div class="utility-links">
+      <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+      <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
     </div>
-
-    <div>
-      <div class="sidebar-eyebrow">PAGES</div>
-      <nav class="sidebar-nav-list">
-        <a href="index.html"        class="nav-item active">▸ home</a>
-        <a href="publications.html" class="nav-item">· publications</a>
-        <a href="projects.html"     class="nav-item">· projects</a>
-        <a href="cv.html"           class="nav-item">· cv</a>
-      </nav>
+    <a class="nav-cv" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV PDF">CV ↓</a>
+  </div>
+</div></nav>
+<main id="main">
+<header class="hero"><div class="wrap hero-grid">
+  <div>
+    <div class="hero-affiliation"><img src="Queens-logo-lockup-computing-horz-digital-colour.png" alt="Queen's University Computing"></div>
+    <h1 class="name serif">Nafiz Sadman</h1>
+    <p class="role">PhD Researcher in Medical Vision-Language Models</p>
+    <p class="lede">I study how multimodal AI systems understand medical images, particularly when data are imbalanced, findings are rare, or model behaviour is difficult to interpret.</p>
+    <div class="buttons">
+      <a class="btn primary" href="research.html">Explore Research</a>
+      <a class="btn" href="research.html#publications">Publications</a>
+      <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
     </div>
-
-    <!-- LINKS hidden on home -->
-
-    <div class="sidebar-footer">
-      <div>Kingston, ON · © 2026</div>
-      <div class="built">built with care</div>
+    <div class="social">
+      <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+      <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="mailto:sadman.n@queensu.ca">Email ↗</a>
     </div>
-  </aside>
+  </div>
+  <div class="portrait"><img src="gittu.jpg" alt="Nafiz Sadman outside a Queen's University building"></div>
+</div></header>
 
-  <!-- ===== MAIN ===== -->
-  <main class="main-content">
-    <div class="home-grid">
+<section id="research-focus"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">Research focus</div><h2 class="section-title serif">My current research explorations</h2></div><p class="section-copy">Medical images are complex, rare findings matter, and reliable model behaviour needs careful evaluation.</p></div>
+  <div class="focus">
+    <article class="focus-item"><span class="num">01</span><h3>Medical Vision-Language Models</h3><p>Understanding how multimodal foundation models represent and reason about radiology images and clinical concepts.</p></article>
+    <article class="focus-item"><span class="num">02</span><h3>Long-Tailed Medical AI</h3><p>Improving recognition and evaluation for rare and underrepresented findings in real-world medical datasets.</p></article>
+    <article class="focus-item"><span class="num">03</span><h3>Interpretable &amp; Reliable AI</h3><p>Studying model behaviour, robustness, grounding, calibration, representation, and explanation quality.</p></article>
+  </div>
+</div></section>
 
-      <!-- ── PROFILE CARD ── -->
-      <div class="card card--hover profile-card">
-        <div class="profile-photo">
-          <img src="gittu.jpg" alt="Nafiz Sadman">
-        </div>
-        <div class="profile-body">
-          <div class="profile-name">Nafiz Sadman</div>
-          <div class="profile-role">PhD Candidate · Queen's Computing</div>
-          <div class="profile-affil">
-            BAM Lab — Big Data Analytics &amp; Management<br>
-            📍 Kingston, ON, Canada
-          </div>
-          <div class="profile-links">
-            <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en"
-               target="_blank" rel="noopener noreferrer"
-               class="ext-link ext-link--red">scholar ↗</a>
-            <a href="https://github.com/Nafiz95"
-               target="_blank" rel="noopener noreferrer"
-               class="ext-link ext-link--blue">github ↗</a>
-            <a href="https://www.linkedin.com/in/nafiz-sadman/"
-               target="_blank" rel="noopener noreferrer"
-               class="ext-link ext-link--gold">linkedin ↗</a>
-            <a href="mailto:sadman.n@queensu.ca"
-               class="ext-link ext-link--ink">✉ email ↗</a>
-          </div>
-        </div>
-      </div>
+<section class="alt" id="featured-research"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">Featured research</div><h2 class="section-title serif">Projects in focus.</h2></div><p class="section-copy">Research into evaluation, imbalance, and interpretation in medical imaging.</p></div>
+  <div class="feature">
+    <div class="visual feature-visual feature-visual--portrait"><img src="ctvlm-inspect.png" loading="lazy" decoding="async" alt="CTVLM-Inspect workflow from chest CT model inputs to a multi-metric evaluation suite"></div>
+    <div class="copy feature-copy"><div class="kicker">Chest CT · VLM evaluation</div><h3>CTVLM-Inspect</h3><p>A model-agnostic evaluation framework for chest-CT vision-language models spanning classification, calibration, retrieval, reconstruction consistency, interpretability, and related model behaviour.</p><div class="tags"><span class="tag">Chest CT</span><span class="tag">Vision-Language Models</span><span class="tag">Evaluation</span><span class="tag">Interpretability</span></div><a class="textlink" href="research.html#medical-vlms">Explore research →</a></div>
+  </div>
+  <div class="feature reverse">
+    <div class="visual feature-visual feature-visual--landscape"><img src="longtail.png" loading="lazy" decoding="async" alt="Map of long-tailed radiology applications, research problems, and methods"></div>
+    <div class="copy feature-copy"><div class="kicker">Rare findings · Radiology</div><h3>Long-Tailed Learning in Chest Radiology</h3><p>A research program on rare-finding recognition, cross-dataset behaviour, calibration, grounding, and adaptation strategies for chest X-ray and CT models.</p><div class="tags"><span class="tag">Long-tail</span><span class="tag">Chest X-ray</span><span class="tag">CT</span><span class="tag">Calibration</span></div><a class="textlink" href="research.html#long-tailed-ai">Explore research →</a></div>
+  </div>
+  <div class="mini-grid">
+    <article class="mini"><div class="mini-visual"><img src="biomedclip.png" loading="lazy" decoding="async" alt="BiomedCLIP data-processing, model configuration, and evaluation diagram"></div><div class="mini-body"><div class="kicker">BioKDD 2025</div><h3>Biomedical VLM Interpretability</h3><p>Understanding representation and explanation behaviour under class imbalance and distribution shift.</p><a class="textlink" href="research.html#pub-biomedclip">Read publication →</a></div></article>
+    <article class="mini"><div class="mini-visual"><img src="depthpulse.png" loading="lazy" decoding="async" alt="DepthPulse+ method combining depth and physiological model outputs for a final decision"></div><div class="mini-body"><div class="kicker">IEEE ICC 2026</div><h3>DepthPulse+</h3><p>Combining depth information and physiological signals for face presentation-attack detection.</p><a class="textlink" href="research.html#pub-depthpulse">Read publication →</a></div></article>
+  </div>
+</div></section>
 
-      <!-- ── RESEARCH FOCUS ── -->
-      <div class="card research-focus-card">
-        <div class="eyebrow eyebrow--red">Research Focus</div>
-        <div class="research-headline">
-          <span style="color:#9d1939">Interpretable</span>,
-          <span style="color:#11335d">transferable</span>, and explainable
-          <span style="border-bottom:2px solid #c79a1e; padding-bottom:1px">VLMs</span> for radiology.
-        </div>
-        <div class="research-sub">
-          XAI in vision &amp; NLP · biomedical applications · face presentation-attack detection.
-          Previously at Pfizer Canada and EvenUp Law.
-        </div>
-        <div class="chip-row" style="margin-top:14px">
-          <span class="chip chip--red">XAI</span>
-          <span class="chip chip--blue">VLM</span>
-          <span class="chip chip--gold">Radiology</span>
-          <span class="chip chip--ink">Cybersecurity</span>
-          <span class="chip chip--ink">Reinforcement Learning</span>
-          <span class="chip chip--ink">Comp-Bio</span>
-        </div>
-      </div>
+<section id="selected-publications"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">Selected publications</div><h2 class="section-title serif">A few representative papers.</h2></div><a class="textlink" href="research.html#publications">All publications →</a></div>
+  <div class="pubs">
+    <article class="pub"><span class="pub-year">2026</span><h3>DepthPulse+: A Depth and Vital Sign Based Method for Face Presentation Attack Detection</h3><div class="venue">IEEE ICC 2026</div><p>Presentation-attack detection using depth and physiological cues.</p><div class="links"><a href="research.html#pub-depthpulse">Details →</a></div></article>
+    <article class="pub"><span class="pub-year">2025</span><h3>Interpreting Biomedical VLMs on High-Imbalance Out-of-Distributions</h3><div class="venue">BioKDD 2025</div><p>Interpretability analysis of biomedical VLM behaviour in radiology settings.</p><div class="links"><a href="research.html#pub-biomedclip">Details →</a></div></article>
+    <article class="pub"><span class="pub-year">2025</span><h3>Visualizing Temporal Interval Hierarchies</h3><div class="venue">NASA Formal Methods 2025</div><p>Visualization tooling for temporal interval structures in streaming system data.</p><div class="links"><a href="research.html#pub-temporal">Details →</a></div></article>
+    <article class="pub"><span class="pub-year">2025</span><h3>Diagnosis and management of Alzheimer's disease in primary care</h3><div class="venue">Journal of Primary Care &amp; Community Health</div><p>A real-world Ontario clinical study informed by electronic health-record analysis.</p><div class="links"><a href="research.html#pub-alzheimers">Details →</a></div></article>
+  </div>
+</div></section>
 
-      <!-- ── STATS TRIPLET ── -->
-      <div class="stat-triplet">
-        <!-- Citations -->
-        <div class="card card--tinted-red stat-tile stat-tile--red">
-          <div class="eyebrow eyebrow--red">Citations · live</div>
-          <div class="stat-row">
-            <span class="stat-number" data-countup="187">0</span>
-            <div class="sparkline">
-              <svg viewBox="0 0 120 30" preserveAspectRatio="none">
-                <polyline points="0,26 14,24 28,21 42,22 56,16 70,15 84,9 96,11 108,5 120,3"
-                          fill="none" stroke="#9d1939" stroke-width="1.5"/>
-                <polyline points="0,26 14,24 28,21 42,22 56,16 70,15 84,9 96,11 108,5 120,3 120,30 0,30"
-                          fill="#9d1939" opacity="0.12" stroke="none"/>
-              </svg>
-            </div>
-          </div>
-          <div class="stat-sub" style="color:#9d1939">Scholar · synced 2026-05-12</div>
-        </div>
-        <!-- h-index -->
-        <div class="card card--tinted-blue stat-tile stat-tile--blue">
-          <div class="eyebrow eyebrow--blue">h-index</div>
-          <div class="stat-row">
-            <span class="stat-number" data-countup="7">0</span>
-          </div>
-        </div>
-        <!-- 1st-auth -->
-        <div class="card card--tinted-gold stat-tile stat-tile--gold">
-          <div class="eyebrow eyebrow--gold">1st-auth papers</div>
-          <div class="stat-row">
-            <span class="stat-number" data-countup="12">0</span>
-          </div>
-        </div>
-      </div>
+<section class="alt" id="research-to-practice"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">Research internships &amp; collaborations</div><h2 class="section-title serif">Research beyond the lab.</h2></div><p class="section-copy">Work with EvenUp, Pfizer Canada, and Queen's collaborators connects machine learning to legal retrieval, clinical research, and visualization.</p></div>
+  <div class="internship-grid">
+    <article class="internship">
+      <div class="internship-logo"><img src="evenup.svg" loading="lazy" decoding="async" alt="EvenUp logo"></div>
+      <div class="org">EvenUp</div><div class="internship-role">Associate Machine Learning Engineer · Internship</div>
+      <div class="internship-date"><time datetime="2025-09">Sep 2025</time> &ndash; <time datetime="2025-12">Dec 2025</time></div>
+      <h3>Retrieval &amp; ranking for legal AI</h3><p>Built relevance evaluation and reranking methods for legal information retrieval.</p>
+      <ul class="internship-keywords"><li>LLM-as-judge</li><li>Cross-encoder, listwise &amp; setwise reranking</li><li>Precision@k · Recall@k · NDCG@k</li></ul>
+    </article>
+    <article class="internship">
+      <div class="internship-logo"><img src="pfizer canada.png" loading="lazy" decoding="async" alt="Pfizer logo"></div>
+      <div class="org">Pfizer Canada</div><div class="internship-role">ML Research Intern · MITACS Accelerate</div>
+      <div class="internship-date"><time datetime="2022-10">Oct 2022</time> &ndash; <time datetime="2023-02">Feb 2023</time></div>
+      <h3>Real-world clinical data analysis</h3><p>Analyzed unstructured electronic health records to study patient characteristics and comorbidity patterns.</p>
+      <ul class="internship-keywords"><li>EHR transformation</li><li>Clustering</li><li>Logistic regression</li></ul>
+    </article>
+  </div>
+  <div class="academic-collaborations">
+    <div class="kicker">Academic collaborations</div>
+    <article class="academic-collaboration">
+      <div class="collaboration-brand"><img src="critlablogo.svg" loading="lazy" decoding="async" alt="CritLab logo"><h3>CritLab@Queen's ECE</h3></div>
+      <div><p class="collaboration-manager"><strong>Manager:</strong> <a href="https://seanmk.com/">Dr. Sean Kauffman</a></p><p>Co-created a visualization interface for space log analysis and <a href="https://nfer.io/"><em>nfer</em></a>, bringing streaming events and temporal interval hierarchies into interactive views. Built the interface with Python Socket.IO and D3.js.</p><p class="collaboration-methods">Python Socket.IO · D3.js · Streaming visualization</p></div>
+    </article>
+    <article class="academic-collaboration">
+      <div class="collaboration-brand"><img class="queens-collaboration-logo" src="QueensLogo_colour.png" loading="lazy" decoding="async" alt="Queen's University logo"><h3>Faculty of Health Science, Queen's University</h3></div>
+      <div><p class="collaboration-supervisors"><strong>Supervisors:</strong> <a href="https://bamlab.ca/team/director">Prof. Farhana Zulkernine</a> and <a href="https://healthsci.queensu.ca/opdes/directory/nicholas-cofie">Dr. Nicholas Cofie</a></p><p>Automated the extraction and evaluation of resident Entrustable Professional Activities from assessor notes. Analyzed sentiment and Spearman correlation between assessor feedback and committee comments.</p></div>
+    </article>
+    <article class="academic-collaboration">
+      <div class="collaboration-brand"><img class="queens-collaboration-logo" src="QueensLogo_colour.png" loading="lazy" decoding="async" alt="Queen's University logo"><h3>School of Rehabilitation Therapy, Queen's University</h3></div>
+      <div><p class="collaboration-supervisors"><strong>Supervisors:</strong> <a href="https://bamlab.ca/team/director">Prof. Farhana Zulkernine</a> and <a href="https://rehab.queensu.ca/nora-fayed">Assoc. Prof. Nora Fayed</a></p><p>Automated literature filtration, information extraction, and classification across 8,000 clinical randomized controlled trial articles using domain-specific BERT, with a reported 95% specificity. Contributed to grant writing.</p></div>
+    </article>
+  </div>
+</div></section>
 
-      <!-- ── RECENT PUBLICATIONS ── -->
-      <div class="card recent-pubs-card">
-        <div class="recent-pubs-header">
-          <div class="eyebrow eyebrow--ink">Recent Publications</div>
-          <a href="publications.html" class="see-all">see all →</a>
-        </div>
-        <div>
-          <a href="publications.html" class="recent-pubs-row">
-            <span class="recent-pub-year" style="color:#9d1939">2026</span>
-            <span class="recent-pub-title">DepthPulse+: A Depth and Vital Sign Based Method for Face Presentation Attack Detection</span>
-            <span class="recent-pub-venue">IEEE ICC'26</span>
-          </a>
-          <a href="publications.html" class="recent-pubs-row">
-            <span class="recent-pub-year" style="color:#11335d">2025</span>
-            <span class="recent-pub-title">Interpreting Biomedical VLMs on High-Imbalance Out-of-Distributions: An Insight into BiomedCLIP on Radiology</span>
-            <span class="recent-pub-venue">BioKDD'25</span>
-          </a>
-          <a href="publications.html" class="recent-pubs-row">
-            <span class="recent-pub-year" style="color:#8a6a10">2025</span>
-            <span class="recent-pub-title">Visualizing Temporal Interval Hierarchies</span>
-            <span class="recent-pub-venue">NFM'25</span>
-          </a>
-        </div>
-      </div>
+<!-- Research Journey and Now are reserved for the About page.
+<section id="journey"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">Research journey</div><h2 class="section-title serif">A trajectory, not a résumé timeline.</h2></div><p class="section-copy">From applied machine learning to evaluation and interpretation in medical AI.</p></div>
+  <div class="timeline">
+    <article class="milestone"><span class="dot" aria-hidden="true"></span><strong>2019</strong><h3>Machine learning engineering</h3><p>Applied ML, NLP, reinforcement learning, and speech systems.</p></article>
+    <article class="milestone"><span class="dot" aria-hidden="true"></span><strong>2022</strong><h3>Queen's + MSc</h3><p>Cybersecurity, biometrics, depth, rPPG, and presentation-attack detection.</p></article>
+    <article class="milestone"><span class="dot" aria-hidden="true"></span><strong>2023</strong><h3>Biomedical &amp; clinical AI</h3><p>Cross-disciplinary work with health-science collaborators and Pfizer Canada.</p></article>
+    <article class="milestone"><span class="dot" aria-hidden="true"></span><strong>2025</strong><h3>VLMs, retrieval &amp; visualization</h3><p>BioKDD, NFM, biomedical VLM interpretability, and EvenUp.</p></article>
+    <article class="milestone"><span class="dot" aria-hidden="true"></span><strong>2026</strong><h3>Medical VLM evaluation</h3><p>Chest CT, long-tail radiology, and reliable multimodal AI.</p></article>
+  </div>
+</div></section>
 
-      <!-- ── NOW ── -->
-      <div class="card now-card">
-        <div class="eyebrow eyebrow--ink">Now · May 2026</div>
-        <ul class="now-list">
-          <li>Back at Queen's after the EvenUp Law ML internship</li>
-          <li>Writing thesis chapter on biomedical VLM interpretability</li>
-          <li>Preparing the ICC'26 talk for DepthPulse+</li>
-        </ul>
-      </div>
+<section style="padding-top:20px"><div class="wrap"><div class="now"><h2 class="serif">Now</h2><ul><li>Chest-radiology VLM evaluation</li><li>Long-tailed medical AI</li><li>PhD thesis research</li></ul></div></div></section>
+-->
 
-      <!-- ── FEATURED PROJECTS ── -->
-      <div class="card featured-projects-card">
-        <div class="featured-projects-header">
-          <div class="eyebrow eyebrow--ink">Featured Projects</div>
-          <a href="projects.html" class="see-all">see all →</a>
-        </div>
-        <div class="proj-thumb-grid">
-          <a href="projects.html" class="proj-thumb">
-            <div class="proj-thumb-img"
-                 style="background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(0,0,0,0.05) 6px 7px), rgba(157,25,57,0.08)"></div>
-            <div class="proj-thumb-title" style="color:#9d1939">XAI on Biomedical VLMs</div>
-            <div class="proj-thumb-area">Computational Biology</div>
-          </a>
-          <a href="projects.html" class="proj-thumb">
-            <div class="proj-thumb-img"
-                 style="background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(0,0,0,0.05) 6px 7px), rgba(17,51,93,0.08)"></div>
-            <div class="proj-thumb-title" style="color:#11335d">DepthPulse+ · Liveness Detection</div>
-            <div class="proj-thumb-area">Biometrics &amp; Cybersecurity</div>
-          </a>
-          <a href="projects.html" class="proj-thumb">
-            <div class="proj-thumb-img"
-                 style="background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(0,0,0,0.05) 6px 7px), rgba(199,154,30,0.10)"></div>
-            <div class="proj-thumb-title" style="color:#8a6a10">RL for Imbalanced Biomedical Classification</div>
-            <div class="proj-thumb-area">Reinforcement Learning</div>
-          </a>
-          <a href="projects.html" class="proj-thumb">
-            <div class="proj-thumb-img"
-                 style="background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(0,0,0,0.05) 6px 7px), rgba(157,25,57,0.08)"></div>
-            <div class="proj-thumb-title" style="color:#9d1939">Multi-task Classifier Group Selection</div>
-            <div class="proj-thumb-area">Combinatorial Optimization</div>
-          </a>
-        </div>
-      </div>
-
-    </div><!-- .home-grid -->
-  </main>
-
-</div><!-- .site-shell -->
+</main>
+<footer><div class="wrap">
+  <div class="foot"><div>
+    <h2>Nafiz Sadman</h2>
+    <p>PhD Candidate · Queen's University</p>
+    <p>BAM Lab · School of Computing</p>
+  </div><div class="footlinks">
+    <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+    <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href="mailto:sadman.n@queensu.ca">Email ↗</a>
+    <a href="cv.html">Full CV</a>
+  </div></div>
+  <div class="copyright"><span>Kingston, Ontario · © 2026</span><span>Academic research portfolio</span></div>
+</div></footer>
 <script src="assets/site.js"></script>
 </body>
 </html>

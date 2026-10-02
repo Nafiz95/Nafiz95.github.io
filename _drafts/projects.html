@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research projects by Nafiz Sadman in medical AI, biometrics, cybersecurity, and research visualization.">
+  <title>Projects — Nafiz Sadman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav aria-label="Primary"><div class="wrap nav">
+  <a class="brand" href="index.html">Nafiz Sadman</a>
+  <button class="menu" type="button" aria-controls="site-links" aria-expanded="false">Menu</button>
+  <div class="navlinks" id="site-links">
+    <a data-page="home" href="index.html">Overview</a>
+    <a data-page="research" href="research.html">Research &amp; Publication</a>
+    <a data-page="experience" href="experience.html">Experience</a>
+    <a aria-current="page" href="projects.html">Projects</a>
+    <a data-page="about" href="about.html">About</a>
+    <div class="utility-links">
+      <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+      <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+    <a class="nav-cv" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV PDF">CV ↓</a>
+  </div>
+</div></nav>
+<main id="main">
+<header class="page-hero"><div class="wrap"><div class="kicker">Selected work</div><h1 class="page-title">Projects</h1><p class="page-lede">Current medical vision-language research, published systems, and earlier work across biomedical AI, cybersecurity, optimization, and clinical data.</p></div></header>
+<section class="page-section"><div class="wrap">
+  <div class="filterbar" id="proj-filter-bar" role="group" aria-label="Filter projects">
+    <span class="filter-label">View</span>
+    <button class="filter-button" type="button" data-area-filter="all" aria-pressed="true">All</button>
+    <button class="filter-button" type="button" data-area-filter="current" aria-pressed="false">Current research</button>
+    <button class="filter-button" type="button" data-area-filter="published" aria-pressed="false">Published systems</button>
+    <button class="filter-button" type="button" data-area-filter="earlier" aria-pressed="false">Earlier research</button>
+    <span class="filter-count">Showing <strong id="proj-count" aria-live="polite">10</strong></span>
+  </div>
+  <div class="project-group" data-filter-group><div class="kicker">01 · Current research</div><h2 class="section-subtitle">Medical vision-language AI</h2><div class="project-grid">
+    <article class="project-card" id="ctlm-inspect" data-project-area="current"><div class="figure-placeholder">CTVLM-Inspect figure pending<small>Awaiting research figure</small></div><div class="meta">Chest CT · VLM evaluation</div><h3>CTVLM-Inspect</h3><p>A model-agnostic evaluation framework for chest-CT VLMs spanning classification, calibration, retrieval, reconstruction consistency, interpretability, and related model behaviour.</p><div class="tags"><span class="tag">Chest CT</span><span class="tag">Evaluation</span><span class="tag">Interpretability</span></div><div class="links"><a href="research.html#medical-vlms">Research agenda →</a></div></article>
+    <article class="project-card" id="long-tailed-radiology" data-project-area="current"><div class="figure-placeholder">Long-tail figure pending<small>Awaiting rare-finding visual</small></div><div class="meta">Chest X-ray &amp; CT · Rare findings</div><h3>Long-Tailed Chest Radiology</h3><p>A research program on rare-finding recognition, cross-dataset behaviour, calibration, grounding, and adaptation strategies for chest X-ray and CT models.</p><div class="tags"><span class="tag">Long-tail</span><span class="tag">Radiology</span><span class="tag">Calibration</span></div><div class="links"><a href="research.html#long-tailed-ai">Research agenda →</a></div></article>
+    <article class="project-card" id="biomedical-vlm-interpretability" data-project-area="current"><div class="figure-placeholder">BiomedCLIP figure pending<small>Awaiting interpretability figure</small></div><div class="meta">2024–25 · Lead · Published at BioKDD 2025</div><h3>Biomedical VLM Interpretability</h3><p>GradCAM-based interpretability of BiomedCLIP on imbalanced out-of-distribution radiology data. The work surfaces failure modes and examines clinical robustness.</p><div class="tags"><span class="tag">XAI</span><span class="tag">VLM</span><span class="tag">Computational biology</span></div><div class="links"><a href="research.html#pub-biomedclip">Publication →</a></div></article>
+  </div></div>
+  <div class="project-group" data-filter-group><div class="kicker">02 · Published systems</div><h2 class="section-subtitle">Methods and tools in use</h2><div class="project-grid">
+    <article class="project-card" id="depthpulse" data-project-area="published"><div class="figure-placeholder">DepthPulse+ figure pending<small>Awaiting method or results figure</small></div><div class="meta">2024–26 · Lead · IEEE ICC 2026</div><h3>DepthPulse+ · Liveness Detection</h3><p>Depth maps and rPPG vital-sign signals for face presentation-attack detection on print, replay, and mask attacks. Continues MSc thesis work.</p><div class="tags"><span class="tag">Cybersecurity</span><span class="tag">Biometrics</span></div><div class="links"><a href="research.html#pub-depthpulse">Publication →</a></div></article>
+    <article class="project-card" id="temporal-hierarchy" data-project-area="published"><div class="figure-placeholder">Temporal-hierarchy figure pending<small>Awaiting visualization screenshot</small></div><div class="meta">2024 · Front-end Developer · NFM 2025</div><h3>Visualizing Temporal Interval Hierarchies</h3><p>Python Socket.IO and D3 visualization for streaming PID-controller data. Supports live formal-methods analysis at Queen's ECE.</p><div class="tags"><span class="tag">Visualization</span><span class="tag">Tools</span><span class="tag">Formal methods</span></div><div class="links"><a href="research.html#pub-temporal">Publication →</a></div></article>
+  </div></div>
+  <div class="project-group" data-filter-group><div class="kicker">03 · Earlier research</div><h2 class="section-subtitle">A broad applied foundation</h2><div class="project-grid">
+    <article class="project-card" id="rl-biomedical" data-project-area="earlier"><div class="meta">2023–24 · Lead</div><h3>RL for Imbalanced Biomedical Classification</h3><p>Uses reinforcement learning to learn per-class reward weights for imbalanced biomedical classification, as an alternative to hand-tuned loss reweighting.</p><div class="tags"><span class="tag">Reinforcement learning</span><span class="tag">Computational biology</span></div></article>
+    <article class="project-card" id="classifier-selection" data-project-area="earlier"><div class="meta">2023 · Lead</div><h3>Multi-task Classifier Group Selection</h3><p>Selects the best group of base classifiers for related tasks through combinatorial search over performance and diversity trade-offs.</p><div class="tags"><span class="tag">Optimization</span><span class="tag">Ensembles</span></div></article>
+    <article class="project-card" id="secure-mpc" data-project-area="earlier"><div class="meta">2022 · Lead · Prototype</div><h3>Secret Messaging via MPC</h3><p>Multi-party computation primitives composed for low-overhead covert messaging between mutually distrustful parties.</p><div class="tags"><span class="tag">Cybersecurity</span><span class="tag">Cryptography</span></div></article>
+    <article class="project-card" id="resident-epa" data-project-area="earlier"><div class="meta">2023–24 · BAM Lab · Faculty of Health Sciences</div><h3>Resident EPA Evaluation from Assessor Notes</h3><p>Automated extraction and evaluation of resident Entrustable Professional Activities from assessor notes using sentiment analysis and Spearman correlation against committee comments.</p><div class="tags"><span class="tag">NLP</span><span class="tag">Medical education</span></div></article>
+    <article class="project-card" id="clinical-rct" data-project-area="earlier"><div class="meta">2023–24 · BAM Lab · Rehabilitation Therapy</div><h3>Clinical RCT Literature Filtration</h3><p>Domain-specific BERT filtration and classification across 8,000 clinical RCT articles, with reported 95% specificity.</p><div class="tags"><span class="tag">NLP</span><span class="tag">BERT</span><span class="tag">Clinical literature</span></div></article>
+  </div></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div class="foot"><div>
+    <h2>Nafiz Sadman</h2>
+    <p>PhD Candidate · Queen's University</p>
+    <p>BAM Lab · School of Computing</p>
+  </div><div class="footlinks">
+    <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+    <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href="mailto:sadman.n@queensu.ca">Email ↗</a>
+    <a href="cv.html">Full CV</a>
+  </div></div>
+  <div class="copyright"><span>Kingston, Ontario · © 2026</span><span>Academic research portfolio</span></div>
+</div></footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,96 +1,49 @@
-# nafiz95.github.io
+# Nafiz Sadman — academic portfolio
 
-Personal academic portfolio — [nafiz95.github.io](https://nafiz95.github.io)
+Static academic website for [nafiz95.github.io](https://nafiz95.github.io). GitHub Pages serves the repository's HTML, CSS, and JavaScript files directly. No build or package installation is required.
 
-Nafiz Sadman · PhD Candidate · Queen's University, School of Computing · BAM Lab
+## Preview locally
 
-## Stack
+From the repository root, run `python -m http.server 8080`, then open <http://localhost:8080>. Refresh the browser after edits and stop the server with Ctrl+C.
 
-Vanilla HTML + CSS + JS. No build step — GitHub Pages serves the files directly.
+## Page map
 
-```
-index.html          ← Home (bento grid)
-publications.html   ← Publications (filterable, expandable abstracts)
-projects.html       ← Projects (filterable by area)
-cv.html             ← CV (timeline + sticky rail)
-assets/
-  styles.css        ← All shared styles + design tokens
-  site.js           ← count-up animation, filtering, abstract toggle
-  cv.pdf            ← Resume PDF (V8)
-gittu.jpg           ← Profile headshot
-scripts/
-  fetch_scholar.py  ← Scholar stats scraper (used by CI)
-.github/workflows/
-  scholar-sync.yml  ← Daily GitHub Action to refresh citation counts
-```
+| Page | File | Content |
+| --- | --- | --- |
+| Overview | `index.html` | Research identity, focus, featured work, four selected papers, internships, and collaborations |
+| Research & Publication | `research.html` | Three research pillars, year-grouped publications, and a compact citation card |
+| Old publications URL | `publications.html` | Redirects to the research page and preserves paper/archive fragments |
+| Experience | `experience.html` | V9 résumé roles grouped into Research, Industry, and Teaching Experience |
+| Old projects URL | `projects.html` | Redirects to Research & Publication while the page is being revised |
+| Old teaching URL | `teaching.html` | Redirects to the Teaching Experience section |
+| About | `about.html` | Research biography and education |
+| Full CV | `cv.html` | Detailed history, service, certifications, references |
+| PDF CV | `assets/cv.pdf` | Downloadable CV |
 
-## Run locally
+Shared design and interactions are in `assets/styles.css` and `assets/site.js`.
 
-Any static file server works:
+## Editing content
 
-```bash
-# Python (built-in)
-python -m http.server 8080
-# then open http://localhost:8080
+Text stays in semantic HTML so pages remain readable without JavaScript and can be indexed directly. Update `research.html` for research pillars and publication records, then check related overview links. The mobile menu and publication filters use `assets/site.js`. Publication summaries use native `<details>` controls and work without JavaScript. Publication filters appear only when JavaScript is available; all publication records remain visible otherwise.
 
-# Node (npx)
-npx serve .
-```
+The previous Projects page is saved as `_drafts/projects.html` for later editing. GitHub Pages excludes this draft directory from the published site. Restore and revise it when the Projects page is ready to return; `projects.html` currently redirects visitors to Research & Publication.
 
-## Update content
+Research, industry, and teaching roles are edited in `experience.html`. Keep the `teaching-experience` anchor so the old teaching URL and CV link continue to work.
 
-All content is hard-coded in the HTML files.
+The publication list in `research.html#publications` is based on `assets/publications.bib` and grouped by year. Its Year and Topic controls can be combined; add or update each record's `data-pub-year` and `data-pub-tags` when editing. Keep existing `pub-*`, `summary-*`, and `archive` IDs: old `publications.html#...` links redirect to these anchors. Update the HTML and BibTeX file together when a record changes. Omit unavailable paper or code buttons; do not use `href="#"`.
 
-| Content | File |
-|---|---|
-| Bio, role, links | `index.html` — profile card |
-| Research focus tagline + chips | `index.html` — research focus card |
-| "Now" bullets | `index.html` — now card |
-| Publications | `publications.html` — one `.pub-card` block per paper |
-| Scholar stat numbers | `publications.html` + `index.html` — `data-countup` attributes |
-| Projects | `projects.html` — one `.project-card` block per project |
-| CV sections | `cv.html` |
-| CV PDF | replace `assets/cv.pdf` |
-| Headshot | replace `gittu.jpg` (or update `<img src>` in `index.html`) |
+The citation card beside the publication filters in `research.html#citation-statistics` is a manually maintained snapshot of Google Scholar values supplied by the site owner. Update the numbers and citation bar widths together when the profile changes.
 
-### Adding a publication
+The research journey and “Now” sections are currently commented out on the overview page.
 
-Copy an existing `.pub-card` block in `publications.html` and update:
-- `data-pub-tags` attribute — comma-separated, e.g. `"XAI,VLM,first-author"`
-- The colored left stripe `background` color
-- Title, venue badge, authors, venue full name, abstract, links
-- Place it in the correct year group, or add a new `year-group` section
+## Images
 
-### Adding a project
+The existing `gittu.jpg` is the portrait. The research page uses the owner-supplied `ctvlm-inspect.png`, `longtail.png`, and `biomedclip.png`; the overview also uses `depthpulse.png`. The saved Projects draft still has figure placeholders; replace those with owner-supplied figures and suitable alt text when revising it. Do not use generated portraits or synthetic scientific results.
 
-Copy an existing `.project-card` block in `projects.html` and update:
-- `data-project-area` — must match a `data-area-filter` chip, or add a new chip to the filter bar
-- Header background tint + border color, area pill, title, year/role, description, tags, status, links
+## Content review before publication
 
-## Updating Scholar stats manually
-
-Update the `data-countup` values in `index.html` and `publications.html`:
-
-```html
-<span class="stat-number" data-countup="187">0</span>  <!-- citations -->
-<span class="stat-number" data-countup="7">0</span>    <!-- h-index -->
-<span class="stat-number" data-countup="6">0</span>    <!-- i10-index -->
-<span class="stat-number" data-countup="12">0</span>   <!-- 1st-auth papers -->
-```
-
-Also update the subtitle text in `publications.html` and the "synced" date in the Citations stat tile.
-
-## Google Scholar auto-sync (optional)
-
-`.github/workflows/scholar-sync.yml` runs daily at 06:00 UTC, calls
-`scripts/fetch_scholar.py`, and commits updated stats.
-
-**Note:** `scholarly` scrapes Scholar and may hit CAPTCHAs from GitHub Actions IP
-ranges. If the action fails, update the values manually as above.
-The workflow supports `workflow_dispatch` for manual triggering from the GitHub UI.
+Confirm the three drafted research questions under each pillar in `research.html`. Review roles marked “Present,” the CV facts and PDF, the teaching course list, and older project statuses. The redesign preserves existing facts unless the approved handoff supplies an updated research description.
 
 ## Deploy
 
-Push to `main` — GitHub Pages picks it up automatically. No build step needed.
-
-For a custom domain, add a `CNAME` file to the repo root containing your domain.
+After reviewing content and testing locally, commit and push the site files to `main`. GitHub Pages serves the root HTML files directly. Do not include the local `nafiz_portfolio_codex_handoff/` folder in the published commit.

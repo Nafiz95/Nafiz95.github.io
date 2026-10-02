@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="description" content="Research and publications by Nafiz Sadman on medical vision-language models, long-tailed radiology, and interpretable, reliable AI.">
+  <title>Research &amp; Publication — Nafiz Sadman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=20261001-4">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav aria-label="Primary"><div class="wrap nav">
+  <a class="brand" href="index.html">Nafiz Sadman</a>
+  <button class="menu" type="button" aria-controls="site-links" aria-expanded="false">Menu</button>
+  <div class="navlinks" id="site-links">
+    <a data-page="home" href="index.html">Overview</a>
+    <a aria-current="page" href="research.html">Research &amp; Publication</a>
+    <a data-page="experience" href="experience.html">Experience</a>
+    <a data-page="about" href="about.html">About</a>
+    <div class="utility-links">
+      <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+      <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+    <a class="nav-cv" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV PDF">CV ↓</a>
+  </div>
+</div></nav>
+<main id="main">
+<header class="page-hero research-hero"><div class="wrap"><h1 class="page-title">Research &amp; Publication</h1><p class="page-lede">My current work asks how medical vision-language systems represent clinical information, perform on rare findings, and support trustworthy interpretation and evaluation.</p><div class="buttons"><a class="btn primary" href="#publications">Browse publications</a></div></div></header>
+<section class="page-section research-content"><div class="wrap">
+  <!-- Draft research-question wording for owner review before publication. -->
+  <article class="research-pillar" id="medical-vlms">
+    <div><div class="kicker">01 · Medical Vision-Language Models</div><h2>Understanding multimodal models in radiology</h2><p>I study how multimodal foundation models represent radiology images and clinical concepts. CTVLM-Inspect evaluates chest-CT vision-language models across classification, calibration, retrieval, reconstruction consistency, and interpretability.</p>
+      <h3>Current questions</h3><ul><li>What clinical information do chest-CT vision-language models represent reliably?</li><li>How do classification, retrieval, calibration, and reconstruction-consistency evaluations complement one another?</li><li>Where do model behaviour and clinical concepts diverge across tasks and datasets?</li></ul>
+    </div><figure class="research-figure"><div class="visual feature-visual feature-visual--portrait"><img src="ctvlm-inspect.png" loading="lazy" decoding="async" alt="CTVLM-Inspect workflow from chest CT model inputs to a multi-metric evaluation suite"></div><figcaption>CTVLM-Inspect evaluation workflow.</figcaption></figure>
+  </article>
+  <article class="research-pillar" id="long-tailed-ai">
+    <div><div class="kicker">02 · Long-Tailed Medical AI</div><h2>Making rare findings visible in evaluation</h2><p>I study rare-finding recognition, cross-dataset behaviour, calibration, grounding, and adaptation strategies for chest X-ray and CT models.</p>
+      <h3>Current questions</h3><ul><li>How does model performance change from common findings to rare findings?</li><li>Which evaluations expose underrepresented-class failures that aggregate metrics conceal?</li><li>How do adaptation, grounding, and calibration behave across datasets with different finding frequencies?</li></ul>
+    </div><figure class="research-figure"><div class="visual feature-visual feature-visual--landscape"><img src="longtail.png" loading="lazy" decoding="async" alt="Map of long-tailed radiology applications, research problems, and methods"></div><figcaption>Long-tailed chest-radiology research map.</figcaption></figure>
+  </article>
+  <article class="research-pillar" id="reliable-ai">
+    <div><div class="kicker">03 · Interpretable &amp; Reliable AI</div><h2>Interpreting model behaviour under shift</h2><p>I study representation and explanation behaviour under class imbalance and distribution shift, alongside model robustness, grounding, and calibration in radiology.</p>
+      <h3>Current questions</h3><ul><li>What do interpretation methods reveal about biomedical vision-language models under imbalance?</li><li>How stable are explanations and representations when data shift between settings?</li><li>How can evaluation distinguish plausible explanations from reliable model behaviour?</li></ul>
+    </div><figure class="research-figure"><div class="visual feature-visual feature-visual--landscape"><img src="biomedclip.png" loading="lazy" decoding="async" alt="BiomedCLIP data-processing, model configuration, and evaluation diagram"></div><figcaption>BiomedCLIP study workflow.</figcaption></figure>
+  </article>
+</div></section>
+<section class="page-section publication-section" id="publications"><div class="wrap">
+  <span id="archive" class="anchor-alias" aria-hidden="true"></span>
+  <div class="publication-intro">
+    <div><h2 class="section-subtitle">Publications</h2><p class="prose">Browse by year or focus on a research area.</p></div>
+    <div class="publication-source-links"><a class="textlink" href="assets/publications.bib?v=20261001-3" download>Download BibTeX &#8595;</a></div>
+  </div>
+  <div class="publication-tools">
+  <div class="pub-controls" id="pub-filter-bar" role="group" aria-label="Filter publications">
+    <label for="pub-year-filter">Year<select id="pub-year-filter"><option value="all">All years</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option></select></label>
+    <label for="pub-topic-filter">Topic<select id="pub-topic-filter"><option value="all">All topics</option><option value="nlp">NLP</option><option value="cv">CV</option><option value="multimodal">Multimodal</option><option value="healthcare">Healthcare</option><option value="cybersecurity">Cybersecurity</option><option value="recommender-systems">Recommender Systems</option><option value="visualization">Visualization</option><option value="software-engineering">Software Engineering</option><option value="machine-learning">Machine Learning</option><option value="finance">Finance</option><option value="robotics">Robotics</option></select></label>
+    <span class="filter-count">Showing <strong id="pub-showing-count" aria-live="polite">27</strong> of 27</span>
+  </div>
+  <aside class="citation-compact" id="citation-statistics" aria-labelledby="citation-statistics-title">
+    <div class="citation-compact-head"><h3 id="citation-statistics-title">Citation statistics</h3><a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a></div>
+    <table>
+      <thead><tr><th scope="col">Metric</th><th scope="col">All time</th><th scope="col">Since 2021</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Citations</th><td><strong>236</strong><span class="citation-mini-track" aria-hidden="true"><span style="width:100%"></span></span></td><td><strong>229</strong><span class="citation-mini-track" aria-hidden="true"><span style="width:97.03%"></span></span></td></tr>
+        <tr><th scope="row">h-index</th><td>9</td><td>9</td></tr>
+        <tr><th scope="row">i10-index</th><td>7</td><td>7</td></tr>
+      </tbody>
+    </table>
+  </aside>
+  </div>
+  <p class="publication-empty" id="pub-empty" role="status" hidden>No publications match these filters. Try another year or topic.</p>
+  <div class="year-group" data-filter-group><h3 class="year-heading">2026</h3>
+    <article class="pub-entry" id="pub-depthpulse" data-pub-year="2026" data-pub-tags="cv,cybersecurity">
+      <h4>DepthPulse+: A Depth and Vital Sign Based Method for Face Presentation Attack Detection</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Furkan Alaca, Farhana Zulkernine</p>
+      <p class="venue">ICC 2026-IEEE International Conference on Communications &middot; pp. 1&ndash;6</p>
+      <div class="tags"><span class="tag">CV</span><span class="tag">Cybersecurity</span></div>
+      <details class="publication-summary"><summary>Read summary</summary>
+<div class="abstract-panel" id="summary-depthpulse">Combines depth maps and remote photoplethysmography (rPPG) signals to detect face presentation attacks such as print, replay, and mask attacks on commodity cameras. Improved accuracy under cross-device evaluation.</div></details>
+    </article>
+    <article class="pub-entry" id="pub-chen2026pledo" data-pub-year="2026" data-pub-tags="healthcare">
+      <h4>PLeDO: Pain level detection for osteoarthritis from EMR data</h4>
+      <p class="authors">Yuhao Chen, Jiahao Cai, <strong>Nafiz Sadman</strong>, Farhana Zulkernine, John Queenan, David Barber</p>
+      <p class="venue">Intelligent Data Analysis &middot; pp. 1088467X261472133</p>
+      <div class="tags"><span class="tag">Healthcare</span></div>
+    </article>
+  </div>
+  <div class="year-group" data-filter-group><h3 class="year-heading">2025</h3>
+    <article class="pub-entry" id="pub-temporal" data-pub-year="2025" data-pub-tags="visualization">
+      <h4>Visualizing temporal interval hierarchies</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Nastaran Kianersi, Sean Kauffman</p>
+      <p class="venue">NASA Formal Methods Symposium &middot; pp. 333&ndash;340</p>
+      <div class="tags"><span class="tag">Visualization</span></div>
+      <details class="publication-summary"><summary>Read summary</summary>
+<div class="abstract-panel" id="summary-temporal">A visualization research tool for streaming PID-controller data using Python Socket.IO and D3 to expose temporal interval hierarchies for live formal-methods analysis.</div></details>
+    </article>
+    <article class="pub-entry" id="pub-biomedclip" data-pub-year="2025" data-pub-tags="cv,multimodal,healthcare">
+      <h4>Interpreting Biomedical VLMs on High-Imbalance Out-of-Distributions: An Insight into BiomedCLIP on Radiology</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Farhana Zulkernine, Benjamin Kwan</p>
+      <p class="venue">arXiv preprint arXiv:2506.14136</p>
+      <div class="tags"><span class="tag">CV</span><span class="tag">Multimodal</span><span class="tag">Healthcare</span></div>
+      <details class="publication-summary"><summary>Read summary</summary>
+<div class="abstract-panel" id="summary-biomedclip">Probes BiomedCLIP behaviour on imbalanced out-of-distribution radiology data and uses GradCAM-based interpretation to examine failure modes and clinical robustness.</div></details>
+    </article>
+    <article class="pub-entry" id="pub-alzheimers" data-pub-year="2025" data-pub-tags="healthcare">
+      <h4>Diagnosis and Management of Alzheimer’s Disease in Primary Care: A Real-World Study in Ontario, Canada</h4>
+      <p class="authors">Zahinoor Ismail, Melanie Wilson, Hany Khalifa, Daniela Belovich, Eileen Shaw, Tram Pham, Suzanne McMullen, Yuhao Chen, <strong>Nafiz Sadman</strong>, Jackson Cai, et al.</p>
+      <p class="venue">Journal of Primary Care &amp; Community Health &middot; vol. 16 &middot; pp. 21501319251363156</p>
+      <div class="tags"><span class="tag">Healthcare</span></div>
+      <details class="publication-summary"><summary>Read summary</summary>
+<div class="abstract-panel" id="summary-alzheimers">A real-world Ontario EHR study of Alzheimer's diagnosis and management pathways. Nafiz contributed EHR extraction, k-means clustering, and logistic regression.</div></details>
+    </article>
+    <article class="pub-entry" id="pub-carthy2025siamesephish" data-pub-year="2025" data-pub-tags="nlp,cybersecurity">
+      <h4>SiamesePhish: An Advanced AI-powered URL Embedding Approach with Synthetic URLs for Phishing Detection</h4>
+      <p class="authors">Austin Carthy, <strong>Nafiz Sadman</strong>, Farhana Zulkernine</p>
+      <p class="venue">International Conference on Risks and Security of Internet and Systems &middot; pp. 365&ndash;375</p>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">Cybersecurity</span></div>
+    </article>
+  </div>
+  <div class="year-group" data-filter-group><h3 class="year-heading">2024</h3>
+    <article class="pub-entry" id="pub-ahamed2024software" data-pub-year="2024" data-pub-tags="software-engineering">
+      <h4>Software engineering challenges in the area of testing and project management</h4>
+      <p class="authors">Azaz Ahamed, <strong>Nafiz Sadman</strong>, Touseef Aziz Khan, Mahfuz Ibne Hannan</p>
+      <p class="venue">Thesis, IUB, CSE</p>
+      <div class="tags"><span class="tag">Software Engineering</span></div>
+    </article>
+  </div>
+  <div class="year-group" data-filter-group><h3 class="year-heading">2023</h3>
+    <article class="pub-entry" id="pub-gupta2023behavioral" data-pub-year="2023" data-pub-tags="recommender-systems">
+      <h4>Behavioral recommendation engine driven by only non-identifiable user data</h4>
+      <p class="authors">Kishor Datta Gupta, <strong>Nafiz Sadman</strong>, Akib Sadmanee, Md Kamruzzaman Sarker, Roy George</p>
+      <p class="venue">Machine Learning with Applications &middot; vol. 11 &middot; pp. 100442</p>
+      <div class="tags"><span class="tag">Recommender Systems</span></div>
+    </article>
+    <article class="pub-entry" id="pub-ahamed2023rise" data-pub-year="2023" data-pub-tags="software-engineering">
+      <h4>The rise of remote project management-a new norm?-a survey on it organizations in bangladesh</h4>
+      <p class="authors">Azaz Ahamed, Touseef Aziz Khan, <strong>Nafiz Sadman</strong>, Mahfuz Ibne Hannan, Nujhat Nahar, Mahady Hasan</p>
+      <p class="venue">Independent University, Bangladesh</p>
+      <div class="tags"><span class="tag">Software Engineering</span></div>
+    </article>
+    <article class="pub-entry" id="pub-insightface" data-pub-year="2023" data-pub-tags="cv,cybersecurity">
+      <h4>Vulnerability of open-source face recognition systems to blackbox attacks: A case study with insightface</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Kazi Amit Hasan, Elyas Rashno, Furkan Alaca, Yuan Tian, Farhana Zulkernine</p>
+      <p class="venue">2023 IEEE Symposium Series on Computational Intelligence (SSCI) &middot; pp. 1164&ndash;1169</p>
+      <div class="tags"><span class="tag">CV</span><span class="tag">Cybersecurity</span></div>
+      <details class="publication-summary"><summary>Read summary</summary>
+<div class="abstract-panel" id="summary-insightface">A black-box attack case study on InsightFace examining transferability of perturbations across open-source face-recognition systems.</div></details>
+    </article>
+  </div>
+  <div class="year-group" data-filter-group><h3 class="year-heading">2022</h3>
+    <article class="pub-entry" id="pub-gupta2022safer" data-pub-year="2022" data-pub-tags="recommender-systems">
+      <h4>A Safer Approach to build Recommendation Systems on Unidentifiable Data</h4>
+      <p class="authors">Kishor Datta Gupta, Akib Sadmanee, <strong>Nafiz Sadman</strong></p>
+      <p class="venue">Proceedings of the 14th International Conference on Agents and Artificial Intelligence &middot; vol. 3 &middot; pp. 589&ndash;596</p>
+      <div class="tags"><span class="tag">Recommender Systems</span></div>
+    </article>
+    <article class="pub-entry" id="pub-khan2022interpretable" data-pub-year="2022" data-pub-tags="cv">
+      <h4>Interpretable learning model for lower dimensional feature space: a case study with brown spot detection in rice leaf</h4>
+      <p class="authors">Md Amit Khan, <strong>Nafiz Sadman</strong>, Kishor Datta Gupta, Jesan Ahammed Ovi</p>
+      <p class="venue">2022 IEEE 12th Annual Computing and Communication Workshop and Conference (CCWC) &middot; pp. 0428&ndash;0434</p>
+      <div class="tags"><span class="tag">CV</span></div>
+    </article>
+    <article class="pub-entry" id="pub-sadman2022promise" data-pub-year="2022" data-pub-tags="finance">
+      <h4>Promise of AI in DeFi, a systematic review</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Md Manjurul Ahsan, Abdur Rahman, Zahed Siddique, Kishor Datta Gupta</p>
+      <p class="venue">Digital &middot; vol. 2 &middot; pp. 88&ndash;103</p>
+      <div class="tags"><span class="tag">Finance</span></div>
+    </article>
+    <article class="pub-entry" id="pub-sadman2022heterogenius" data-pub-year="2022" data-pub-tags="machine-learning">
+      <h4>HeteroGenius: An Improvised ‘Intelligence’in Heterogeneous Graph Transformers</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Akib Sadmanee, Kishor Datta Gupta, Roy George</p>
+      <p class="venue">2022 21st IEEE International Conference on Machine Learning and Applications (ICMLA) &middot; pp. 849&ndash;854</p>
+      <div class="tags"><span class="tag">Machine Learning</span></div>
+    </article>
+    <article class="pub-entry" id="pub-ahamed2022automated" data-pub-year="2022" data-pub-tags="cybersecurity,software-engineering">
+      <h4>Automated testing: Testing top 10 owasp vulnerabilities of government web applications in bangladesh</h4>
+      <p class="authors">Azaz Ahamed, <strong>Nafiz Sadman</strong>, Touseef Aziz Khan, Mahfuz Ibne Hannan, Farzana Sadia, Mahady Hasan</p>
+      <p class="venue">ICSEA 2022 &middot; vol. 56</p>
+      <div class="tags"><span class="tag">Cybersecurity</span><span class="tag">Software Engineering</span></div>
+    </article>
+  </div>
+  <div class="year-group" data-filter-group><h3 class="year-heading">2021</h3>
+    <article class="pub-entry" id="pub-sadman2021medical" data-pub-year="2021" data-pub-tags="nlp,healthcare">
+      <h4>Medical Speciality Detector Application (MSDA) Using AI</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Md Habibur Rahman, Md Ariful Haque, Kishor Datta Gupta</p>
+      <p class="venue">Association for the Advancement of Artificial Intelligence, Menlo Park, CA, USA</p>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">Healthcare</span></div>
+    </article>
+    <article class="pub-entry" id="pub-sadman2021understanding" data-pub-year="2021" data-pub-tags="nlp,healthcare">
+      <h4>Understanding the pandemic through mining covid news using natural language processing</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Nishat Anjum, Kishor Datta Gupta, MA Parvez Mahmud</p>
+      <p class="venue">2021 IEEE 11th Annual Computing and Communication Workshop and Conference (CCWC) &middot; pp. 0362&ndash;0367</p>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">Healthcare</span></div>
+    </article>
+    <article class="pub-entry" id="pub-sadman2021recommend" data-pub-year="2021" data-pub-tags="nlp,healthcare,recommender-systems">
+      <h4>Recommend speciality doctor from health transcription: Ensemble machine learning approach</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Md Habibur Rahman, Sumaiya Tasneem, Mohd Ariful Haque, Kishor Datta Gupta</p>
+      <p class="venue">2021 IEEE 11th Annual Computing and Communication Workshop and Conference (CCWC) &middot; pp. 0967&ndash;0972</p>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">Healthcare</span><span class="tag">Recommender Systems</span></div>
+    </article>
+    <article class="pub-entry" id="pub-roy2021review" data-pub-year="2021" data-pub-tags="robotics">
+      <h4>A review on comparative remarks, performance evaluation and improvement strategies of quadrotor controllers</h4>
+      <p class="authors">Rupal Roy, Maidul Islam, <strong>Nafiz Sadman</strong>, MA Parvez Mahmud, Kishor Datta Gupta, Md Manjurul Ahsan</p>
+      <p class="venue">Technologies &middot; vol. 9 &middot; pp. 37</p>
+      <div class="tags"><span class="tag">Robotics</span></div>
+    </article>
+    <article class="pub-entry" id="pub-gupta2021leveraging" data-pub-year="2021" data-pub-tags="recommender-systems">
+      <h4>Leveraging Reinforcement Learning to build a Recommendation System for Incognito mode Users</h4>
+      <p class="authors">Kishor Datta Gupta, <strong>Nafiz Sadman</strong></p>
+      <p class="venue">ICML 2021 Workshop on Representation Learning for Finance and e-Commerce Applications</p>
+      <div class="tags"><span class="tag">Recommender Systems</span></div>
+    </article>
+    <article class="pub-entry" id="pub-sadman2021promise" data-pub-year="2021" data-pub-tags="finance">
+      <h4>Promise of AI in Defi, A Literary Analysis</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Abdur Rahman, Kishor Datta Gupta</p>
+      <p class="venue">Preprints</p>
+      <div class="tags"><span class="tag">Finance</span></div>
+    </article>
+    <article class="pub-entry" id="pub-gupta2021utilizing" data-pub-year="2021" data-pub-tags="cybersecurity,finance">
+      <h4>Utilizing computational complexity to protect cryptocurrency against quantum threats: a review</h4>
+      <p class="authors">Kishor Datta Gupta, Abhijit Kumar Nag, Md Lutfar Rahman, MA Parvez Mahmud, <strong>Nafiz Sadman</strong></p>
+      <p class="venue">IT Professional &middot; vol. 23 &middot; pp. 50&ndash;55</p>
+      <div class="tags"><span class="tag">Cybersecurity</span><span class="tag">Finance</span></div>
+    </article>
+  </div>
+  <div class="year-group" data-filter-group><h3 class="year-heading">2020</h3>
+    <article class="pub-entry" id="pub-sadman2020adcr" data-pub-year="2020" data-pub-tags="software-engineering">
+      <h4>ADCR: An Adaptive TOOL to select” Appropriate Developer for Code Review” based on Code Context</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Md Manjurul Ahsan, MA Parvez Mahmud</p>
+      <p class="venue">2020 11th IEEE Annual Ubiquitous Computing, Electronics &amp; Mobile Communication Conference (UEMCON) &middot; pp. 0583&ndash;0591</p>
+      <div class="tags"><span class="tag">Software Engineering</span></div>
+    </article>
+    <article class="pub-entry" id="pub-sadman2020stylometry" data-pub-year="2020" data-pub-tags="nlp,cybersecurity">
+      <h4>Stylometry as a reliable method for fallback authentication</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Kishor Datta Gupta, Md Ariful Haque, Sajib Sen, Subash Poudyal</p>
+      <p class="venue">2020 17th International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology (ECTI-CON) &middot; pp. 660&ndash;664</p>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">Cybersecurity</span></div>
+    </article>
+    <article class="pub-entry" id="pub-sadman2020detect" data-pub-year="2020" data-pub-tags="nlp,cybersecurity">
+      <h4>Detect review manipulation by leveraging reviewer historical stylometrics in amazon, yelp, facebook and google reviews</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Kishor Datta Gupta, Ariful Haque, Subash Poudyal, Sajib Sen</p>
+      <p class="venue">Proceedings of the 2020 the 6th International Conference on E-Business and Applications &middot; pp. 42&ndash;47</p>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">Cybersecurity</span></div>
+    </article>
+    <article class="pub-entry" id="pub-sadman2020can" data-pub-year="2020" data-pub-tags="nlp,healthcare">
+      <h4>“can nlp techniques be utilized as a reliable tool for medical science?”-building a nlp framework to classify medical reports</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Sumaiya Tasneem, Ariful Haque, Md Maminur Islam, Md Manjurul Ahsan, Kishor Datta Gupta</p>
+      <p class="venue">2020 11th IEEE Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON) &middot; pp. 0159&ndash;0166</p>
+      <div class="tags"><span class="tag">NLP</span><span class="tag">Healthcare</span></div>
+    </article>
+  </div>
+  <div class="year-group" data-filter-group><h3 class="year-heading">2019</h3>
+    <article class="pub-entry" id="pub-sadman2019intrinsic" data-pub-year="2019" data-pub-tags="nlp">
+      <h4>Intrinsic evaluation of bangla word embeddings</h4>
+      <p class="authors"><strong>Nafiz Sadman</strong>, Akib Sadmanee, Md Iftekhar Tanveer, Md Ashraful Amin, Amin Ahsan Ali</p>
+      <p class="venue">2019 International Conference on Bangla Speech and Language Processing (ICBSLP) &middot; pp. 1&ndash;5</p>
+      <div class="tags"><span class="tag">NLP</span></div>
+    </article>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div class="foot"><div>
+    <h2>Nafiz Sadman</h2>
+    <p>PhD Candidate · Queen's University</p>
+    <p>BAM Lab · School of Computing</p>
+  </div><div class="footlinks">
+    <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+    <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href="mailto:sadman.n@queensu.ca">Email ↗</a>
+    <a href="cv.html">Full CV</a>
+  </div></div>
+  <div class="copyright"><span>Kingston, Ontario · © 2026</span><span>Academic research portfolio</span></div>
+</div></footer>
+<script src="assets/site.js?v=20261001-4"></script>
+</body>
+</html>

@@ -1,121 +1,113 @@
-// nafiz95.github.io — shared vanilla JS
-// count-up animation, pub/project filtering, abstract toggle
+// Shared interactions for the static portfolio.
+document.documentElement.classList.add('js');
 
-// ============================================================
-// COUNT-UP ANIMATION
-// ============================================================
-function initCountUp() {
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.querySelectorAll('[data-countup]').forEach(function(el) {
-    var target = parseInt(el.dataset.countup, 10);
-    if (prefersReduced) { el.textContent = target; return; }
-    var duration = 800;
-    var start = performance.now();
-    function tick(now) {
-      var t = Math.min(1, (now - start) / duration);
-      var eased = 1 - Math.pow(1 - t, 3);
-      el.textContent = Math.round(target * eased);
-      if (t < 1) requestAnimationFrame(tick);
-      else el.textContent = target;
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.querySelector('.menu');
+  const menu = document.querySelector('.navlinks');
+
+  if (menuButton && menu) {
+    const closeMenu = () => {
+      menu.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    };
+
+    menuButton.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+
+    menu.addEventListener('click', event => {
+      if (event.target.closest('a')) closeMenu();
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu.classList.contains('open')) {
+        closeMenu();
+        menuButton.focus();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 980) closeMenu();
+    });
+  }
+
+  const setupFilter = (barId, buttonAttribute, cardAttribute, countId) => {
+    const bar = document.getElementById(barId);
+    if (!bar) return;
+
+    const buttons = [...bar.querySelectorAll('button[' + buttonAttribute + ']')];
+    const cards = [...document.querySelectorAll('[' + cardAttribute + ']')];
+    const count = document.getElementById(countId);
+    const groups = [...document.querySelectorAll('[data-filter-group]')];
+
+    const apply = value => {
+      let visible = 0;
+      cards.forEach(card => {
+        const terms = (card.getAttribute(cardAttribute) || '').split(',').map(term => term.trim());
+        const show = value === 'all' || terms.includes(value);
+        card.hidden = !show;
+        if (show) visible += 1;
+      });
+
+      buttons.forEach(button => {
+        button.setAttribute('aria-pressed', String(button.getAttribute(buttonAttribute) === value));
+      });
+
+      groups.forEach(group => {
+        group.hidden = ![...group.querySelectorAll('[' + cardAttribute + ']')].some(card => !card.hidden);
+      });
+
+      if (count) count.textContent = String(visible);
+    };
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => apply(button.getAttribute(buttonAttribute)));
+    });
+
+    const selected = buttons.find(button => button.getAttribute('aria-pressed') === 'true');
+    apply(selected ? selected.getAttribute(buttonAttribute) : 'all');
+  };
+
+  const publicationFilters = document.getElementById('pub-filter-bar');
+  if (publicationFilters) {
+    const yearSelect = document.getElementById('pub-year-filter');
+    const topicSelect = document.getElementById('pub-topic-filter');
+    const count = document.getElementById('pub-showing-count');
+    const empty = document.getElementById('pub-empty');
+    const groups = [...document.querySelectorAll('#publications [data-filter-group]')];
+    const papers = [...document.querySelectorAll('#publications .pub-entry')];
+
+    const applyPublicationFilters = () => {
+      let visible = 0;
+      papers.forEach(paper => {
+        const topics = (paper.dataset.pubTags || '').split(',');
+        const matchYear = yearSelect.value === 'all' || paper.dataset.pubYear === yearSelect.value;
+        const matchTopic = topicSelect.value === 'all' || topics.includes(topicSelect.value);
+        paper.hidden = !(matchYear && matchTopic);
+        if (!paper.hidden) visible += 1;
+      });
+      groups.forEach(group => {
+        group.hidden = ![...group.querySelectorAll('.pub-entry')].some(paper => !paper.hidden);
+      });
+      count.textContent = String(visible);
+      empty.hidden = visible !== 0;
+    };
+
+    yearSelect.addEventListener('change', applyPublicationFilters);
+    topicSelect.addEventListener('change', applyPublicationFilters);
+    applyPublicationFilters();
+  }
+  setupFilter('proj-filter-bar', 'data-area-filter', 'data-project-area', 'proj-count');
+
+  const openLinkedSummary = () => {
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    const details = target?.closest('details');
+    if (details) {
+      details.open = true;
+      requestAnimationFrame(() => target.scrollIntoView());
     }
-    requestAnimationFrame(tick);
-  });
-}
-
-// ============================================================
-// PUBLICATION TAG FILTERING
-// ============================================================
-function initPubFilter() {
-  var bar = document.getElementById('pub-filter-bar');
-  if (!bar) return;
-
-  var chips    = bar.querySelectorAll('[data-filter]');
-  var cards    = document.querySelectorAll('[data-pub-tags]');
-  var countEl  = document.getElementById('pub-showing-count');
-  var groups   = document.querySelectorAll('.year-group');
-
-  function setFilter(f) {
-    // update chip active state
-    chips.forEach(function(c) {
-      c.classList.toggle('active', c.dataset.filter === f);
-    });
-
-    // show/hide individual pub cards
-    var visible = 0;
-    cards.forEach(function(card) {
-      var tags = card.dataset.pubTags.split(',');
-      var show = f === 'all' || tags.indexOf(f) !== -1;
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-
-    if (countEl) countEl.textContent = visible;
-
-    // hide year-group headings when all papers in the group are hidden
-    groups.forEach(function(g) {
-      var anyVisible = Array.from(g.querySelectorAll('[data-pub-tags]'))
-        .some(function(c) { return c.style.display !== 'none'; });
-      g.style.display = anyVisible ? '' : 'none';
-    });
-  }
-
-  chips.forEach(function(chip) {
-    chip.addEventListener('click', function() { setFilter(chip.dataset.filter); });
-  });
-}
-
-// ============================================================
-// PROJECT AREA FILTERING
-// ============================================================
-function initProjectFilter() {
-  var bar = document.getElementById('proj-filter-bar');
-  if (!bar) return;
-
-  var chips   = bar.querySelectorAll('[data-area-filter]');
-  var cards   = document.querySelectorAll('[data-project-area]');
-  var countEl = document.getElementById('proj-count');
-
-  function setFilter(f) {
-    chips.forEach(function(c) {
-      c.classList.toggle('active', c.dataset.areaFilter === f);
-    });
-
-    var visible = 0;
-    cards.forEach(function(card) {
-      var show = f === 'all' || card.dataset.projectArea === f;
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-
-    if (countEl) countEl.textContent = visible;
-  }
-
-  chips.forEach(function(chip) {
-    chip.addEventListener('click', function() { setFilter(chip.dataset.areaFilter); });
-  });
-}
-
-// ============================================================
-// ABSTRACT EXPAND / COLLAPSE
-// ============================================================
-function initAbstractToggles() {
-  document.querySelectorAll('.pub-abstract-toggle').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var body  = btn.closest('.pub-body');
-      var panel = body && body.querySelector('.pub-abstract-panel');
-      if (!panel) return;
-      var open = panel.classList.toggle('open');
-      btn.textContent = open ? '▾ hide abstract' : '▸ show abstract';
-    });
-  });
-}
-
-// ============================================================
-// INIT
-// ============================================================
-document.addEventListener('DOMContentLoaded', function() {
-  initCountUp();
-  initPubFilter();
-  initProjectFilter();
-  initAbstractToggles();
+  };
+  openLinkedSummary();
+  window.addEventListener('hashchange', openLinkedSummary);
 });

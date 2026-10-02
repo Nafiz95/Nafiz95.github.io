@@ -1,345 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CV — Nafiz Sadman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Curriculum Vitae — Nafiz Sadman, PhD candidate at Queen's University, School of Computing.">
+  <meta name="description" content="Curriculum vitae of Nafiz Sadman: education, research, industry, teaching, service, and technical experience.">
+  <title>CV — Nafiz Sadman</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<div class="site-shell">
-
-  <!-- ===== SIDEBAR ===== -->
-  <aside class="sidebar">
-    <div>
-      <div class="brand-name">nafiz.sadman</div>
-      <div class="brand-path">~/cv</div>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav aria-label="Primary"><div class="wrap nav">
+  <a class="brand" href="index.html">Nafiz Sadman</a>
+  <button class="menu" type="button" aria-controls="site-links" aria-expanded="false">Menu</button>
+  <div class="navlinks" id="site-links">
+    <a data-page="home" href="index.html">Overview</a>
+    <a data-page="research" href="research.html">Research &amp; Publication</a>
+    <a data-page="experience" href="experience.html">Experience</a>
+    <a data-page="about" href="about.html">About</a>
+    <div class="utility-links">
+      <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+      <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
     </div>
-
-    <div>
-      <div class="sidebar-eyebrow">PAGES</div>
-      <nav class="sidebar-nav-list">
-        <a href="index.html"        class="nav-item">· home</a>
-        <a href="publications.html" class="nav-item">· publications</a>
-        <a href="projects.html"     class="nav-item">· projects</a>
-        <a href="cv.html"           class="nav-item active">▸ cv</a>
-      </nav>
-    </div>
-
-    <div>
-      <div class="sidebar-eyebrow">LINKS</div>
-      <div class="sidebar-links">
-        <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">↗ scholar</a>
-        <a href="https://github.com/Nafiz95"                                    target="_blank" rel="noopener noreferrer">↗ github</a>
-        <a href="https://www.linkedin.com/in/nafiz-sadman/"                    target="_blank" rel="noopener noreferrer">↗ linkedin</a>
-        <a href="mailto:sadman.n@queensu.ca">↗ email</a>
-      </div>
-    </div>
-
-    <div class="sidebar-footer">
-      <div>Kingston, ON · © 2026</div>
-      <div class="built">built with care</div>
-    </div>
-  </aside>
-
-  <!-- ===== MAIN ===== -->
-  <main class="main-content">
-    <div class="cv-layout">
-
-      <!-- ══════════════════════════════════════
-           MAIN COLUMN
-           ══════════════════════════════════════ -->
-      <div class="cv-main">
-
-        <!-- Page header -->
-        <div class="page-header">
-          <div>
-            <div class="eyebrow eyebrow--red">// Curriculum Vitae</div>
-            <h1>CV</h1>
-            <div class="subtitle">
-              Academic and industry trajectory — Queen's PhD, BAM Lab, Pfizer Canada, EvenUp Law, Silicon Orchard. Full PDF available.
-            </div>
-          </div>
-          <div>
-            <a href="assets/cv.pdf" target="_blank" class="btn-download">Download PDF ↓</a>
-          </div>
-        </div>
-
-        <!-- ── 01 · Education ── -->
-        <section class="cv-section">
-          <div class="cv-section-header">
-            <div class="cv-section-title">01 · Education</div>
-          </div>
-
-          <!-- PhD -->
-          <div class="cv-entry">
-            <div class="cv-entry-date">
-              <div style="font-weight:700; color:#9d1939; letter-spacing:0.04em">In progress</div>
-            </div>
-            <div>
-              <div class="cv-entry-role">Ph.D. in Computing</div>
-              <div class="cv-entry-org" style="color:#9d1939">Queen's University · School of Computing</div>
-              <div style="font-size:12px; color:var(--ink-2); margin-top:6px; line-height:1.55">
-                Focus: XAI in Vision and NLP.
-              </div>
-            </div>
-          </div>
-
-          <!-- MSc -->
-          <div class="cv-entry">
-            <div class="cv-entry-date">
-              <div style="font-weight:700; color:#11335d; letter-spacing:0.04em">Conferred</div>
-            </div>
-            <div>
-              <div class="cv-entry-role">M.Sc. in Cybersecurity</div>
-              <div class="cv-entry-org" style="color:#11335d">Queen's University · School of Computing</div>
-              <div style="font-size:12px; color:var(--ink-2); margin-top:6px; line-height:1.55">
-                Thesis: Passive Liveness Detection using Depth and rPPG for Face Presentation Attack Detection.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ── 02 · Research ── -->
-        <section class="cv-section">
-          <div class="cv-section-header">
-            <div class="cv-section-title">02 · Research</div>
-          </div>
-
-          <!-- BAM Lab -->
-          <div class="cv-entry">
-            <div class="cv-entry-date">
-              <div style="font-weight:700; color:#9d1939">Sep 2022</div>
-              <div style="color:#9d1939">→ Present</div>
-              <span class="cv-entry-badge" style="color:#9d1939; border-color:#9d1939">research</span>
-            </div>
-            <div>
-              <div class="cv-entry-role">Computing Graduate Research Fellow</div>
-              <div class="cv-entry-org" style="color:#9d1939">BAM Lab · Queen's School of Computing</div>
-              <ul class="cv-entry-bullets">
-                <li>Cross-affiliation with Faculty of Health Sciences (Prof. Zulkernine, Dr. Cofie) — automated EPA evaluation from assessor notes.</li>
-                <li>Cross-affiliation with School of Rehabilitation Therapy (Prof. Zulkernine, Assoc. Prof. Fayed) — domain-specific BERT literature filtration (95% specificity, 8,000 RCT articles).</li>
-                <li>Contributed to grant writeup (under review).</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Pfizer -->
-          <div class="cv-entry">
-            <div class="cv-entry-date">
-              <div style="font-weight:700; color:#9d1939">Oct 2022</div>
-              <div style="color:#888">→ Feb 2023</div>
-              <span class="cv-entry-badge" style="color:#9d1939; border-color:#9d1939">research</span>
-            </div>
-            <div>
-              <div class="cv-entry-role">ML Research Intern · MITACS Accelerate</div>
-              <div class="cv-entry-org" style="color:#9d1939">Pfizer Canada</div>
-              <ul class="cv-entry-bullets">
-                <li>Extracted, transformed and analyzed unstructured EHRs (Pandas, MySQL, NumPy, sklearn, seaborn) to model Alzheimer's patient cohorts.</li>
-                <li>k-means clustering &amp; logistic regression for clinical-characteristics prediction.</li>
-                <li>Contributed to paper accepted in Journal of Primary Care &amp; Community Health (2025).</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- ── 03 · Industry ── -->
-        <section class="cv-section">
-          <div class="cv-section-header">
-            <div class="cv-section-title">03 · Industry</div>
-          </div>
-
-          <!-- EvenUp -->
-          <div class="cv-entry">
-            <div class="cv-entry-date">
-              <div style="font-weight:700; color:#11335d">Sep 2025</div>
-              <div style="color:#888">→ Dec 2025</div>
-              <span class="cv-entry-badge" style="color:#11335d; border-color:#11335d">industry</span>
-            </div>
-            <div>
-              <div class="cv-entry-role">Associate Machine Learning Engineer · Intern</div>
-              <div class="cv-entry-org" style="color:#11335d">EvenUp Law (US)</div>
-              <ul class="cv-entry-bullets">
-                <li>Explored GEPA — evolutionary prompt optimization — and measured its effectiveness as an alternative to manual prompt-tuning.</li>
-                <li>Built firmwide relevance dataset with LLM-as-judge for evaluation &amp; retrieval-metric monitoring (P@k, R@k, NDCG@k).</li>
-                <li>Implemented cross-encoder, listwise, and setwise reranking — improved retrieval metrics across the stack.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Smith ECE -->
-          <div class="cv-entry">
-            <div class="cv-entry-date">
-              <div style="font-weight:700; color:#8a6a10">Jan 2024</div>
-              <div style="color:#8a6a10">→ Present</div>
-              <span class="cv-entry-badge" style="color:#8a6a10; border-color:#c79a1e">industry</span>
-            </div>
-            <div>
-              <div class="cv-entry-role">Front-end Developer</div>
-              <div class="cv-entry-org" style="color:#8a6a10">Smith School of ECE · Queen's University</div>
-              <ul class="cv-entry-bullets">
-                <li>Built a visualization research tool for streaming PID-controller data (Python Socket IO + HTML5 + CSS3 + D3).</li>
-                <li>Tool documented in paper accepted to NFM 2025.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Silicon Orchard -->
-          <div class="cv-entry">
-            <div class="cv-entry-date">
-              <div style="font-weight:700; color:#11335d">Aug 2019</div>
-              <div style="color:#888">→ Jul 2022</div>
-              <span class="cv-entry-badge" style="color:#11335d; border-color:#11335d">industry</span>
-            </div>
-            <div>
-              <div class="cv-entry-role">Machine Learning Engineer</div>
-              <div class="cv-entry-org" style="color:#11335d">Silicon Orchard Ltd · Dhaka, Bangladesh</div>
-              <ul class="cv-entry-bullets">
-                <li>Internal HR data analytics tool based on BERT.</li>
-                <li>Stylometric authorship attribution algorithm.</li>
-                <li>Deep reinforcement-learning recommender systems.</li>
-                <li>Speech recognition for smart home systems.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- ── 04 · Teaching ── -->
-        <section class="cv-section">
-          <div class="cv-section-header">
-            <div class="cv-section-title">04 · Teaching</div>
-          </div>
-
-          <div class="cv-entry">
-            <div class="cv-entry-date">
-              <div style="font-weight:700; color:#8a6a10">Jan 2023</div>
-              <div style="color:#8a6a10">→ Present</div>
-              <span class="cv-entry-badge" style="color:#8a6a10; border-color:#c79a1e">teaching</span>
-            </div>
-            <div>
-              <div class="cv-entry-role">Graduate Teaching Assistant</div>
-              <div class="cv-entry-org" style="color:#8a6a10">School of Computing · Queen's University</div>
-              <ul class="cv-entry-bullets">
-                <li>Multiple CS courses — marking, proctoring, conducting lab sessions, office hours.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- ── 05 · Service & Volunteering ── -->
-        <section class="cv-section">
-          <div class="cv-section-header">
-            <div class="cv-section-title">05 · Service &amp; Volunteering</div>
-          </div>
-
-          <div class="cv-entry">
-            <div class="cv-entry-date" style="color:#888; font-family:var(--mono); font-size:11px">
-              Jan 2025 → Aug 2025
-            </div>
-            <div>
-              <div style="font-family:var(--mono); font-size:13px; font-weight:700">COMPSA Liaison Officer</div>
-              <div style="font-size:12px; color:var(--ink-2); margin-top:2px; font-family:var(--mono)">Graduate Computing Society · Queen's</div>
-            </div>
-          </div>
-
-          <div class="cv-entry">
-            <div class="cv-entry-date" style="color:#888; font-family:var(--mono); font-size:11px">
-              Sep 2024 → Present
-            </div>
-            <div>
-              <div style="font-family:var(--mono); font-size:13px; font-weight:700">Vice President</div>
-              <div style="font-size:12px; color:var(--ink-2); margin-top:2px; font-family:var(--mono)">Queen's Bangladeshi Student Association</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ── 06 · Certifications ── -->
-        <section class="cv-section">
-          <div class="cv-section-header">
-            <div class="cv-section-title">06 · Certifications</div>
-          </div>
-          <div class="cert-grid">
-            <div class="card card--tinted-ink" style="padding:14px">
-              <div class="eyebrow eyebrow--red">DeepLearning.AI</div>
-              <div style="font-family:var(--mono); font-size:13px; font-weight:700; margin-top:4px">Deep Learning Specialization</div>
-            </div>
-            <div class="card card--tinted-ink" style="padding:14px">
-              <div class="eyebrow eyebrow--red">DeepLearning.AI</div>
-              <div style="font-family:var(--mono); font-size:13px; font-weight:700; margin-top:4px">TensorFlow in Practice</div>
-            </div>
-          </div>
-        </section>
-
-      </div><!-- .cv-main -->
-
-      <!-- ══════════════════════════════════════
-           RIGHT RAIL
-           ══════════════════════════════════════ -->
-      <aside class="cv-rail">
-
-        <!-- At a glance -->
-        <div class="card card--tinted-red" style="padding:14px">
-          <div class="eyebrow eyebrow--red">At a glance</div>
-          <div style="margin-top:8px">
-            <div class="rail-glance-row"><span>Years in research</span><b>~4</b></div>
-            <div class="rail-glance-row"><span>Years in industry</span><b>~5</b></div>
-            <div class="rail-glance-row"><span>Publications</span><b>12 1st-auth</b></div>
-            <div class="rail-glance-row"><span>Citations</span><b>187</b></div>
-            <div class="rail-glance-row"><span>h-index</span><b>7</b></div>
-          </div>
-        </div>
-
-        <!-- Toolbelt -->
-        <div class="card" style="padding:14px">
-          <div class="eyebrow eyebrow--ink">Toolbelt</div>
-          <div class="chip-row" style="margin-top:8px">
-            <span class="chip chip--ink">PyTorch</span>
-            <span class="chip chip--ink">TensorFlow</span>
-            <span class="chip chip--ink">BERT/CLIP</span>
-            <span class="chip chip--ink">GradCAM</span>
-            <span class="chip chip--ink">D3</span>
-            <span class="chip chip--ink">Pandas</span>
-            <span class="chip chip--ink">sklearn</span>
-            <span class="chip chip--ink">MySQL</span>
-            <span class="chip chip--ink">Socket.IO</span>
-            <span class="chip chip--ink">HTML/CSS</span>
-            <span class="chip chip--ink">LLM-as-judge</span>
-            <span class="chip chip--ink">GEPA</span>
-          </div>
-        </div>
-
-        <!-- References -->
-        <div class="card" style="padding:14px">
-          <div class="eyebrow eyebrow--ink">References</div>
-          <div style="margin-top:8px">
-            <div class="ref-entry">
-              <div class="ref-name">Dr. Farhana Zulkernine, Ph.D., P.Eng.</div>
-              <div class="ref-role">Professor, School of Computing, Queen's University</div>
-            </div>
-            <div class="ref-entry">
-              <div class="ref-name">Dr. Furkan Alaca, Ph.D.</div>
-              <div class="ref-role">Assistant Professor, School of Computing, Queen's University</div>
-            </div>
-            <div class="ref-entry">
-              <div class="ref-name">Dr. Kishor Datta Gupta, Ph.D.</div>
-              <div class="ref-role">Assistant Professor, Clark Atlanta University · CEO, Silicon Orchard Ltd.</div>
-            </div>
-            <div style="color:var(--ink-3); font-size:10px; margin-top:4px; font-family:var(--mono)">
-              Emails available on request.
-            </div>
-          </div>
-        </div>
-
-      </aside><!-- .cv-rail -->
-
-    </div><!-- .cv-layout -->
-  </main>
-
-</div><!-- .site-shell -->
+    <a class="nav-cv" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV PDF">CV ↓</a>
+  </div>
+</div></nav>
+<main id="main">
+<header class="page-hero"><div class="wrap"><div class="kicker">Curriculum vitae</div><h1 class="page-title">CV</h1><p class="page-lede">Education, research, industry, teaching, service, and technical experience.</p><div class="buttons"><a class="btn primary" href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">Download PDF ↓</a></div></div></header>
+<section class="page-section"><div class="wrap cv-layout"><div>
+  <div class="cv-section"><h2>Education</h2><div class="entry-list">
+    <article class="entry"><div class="entry-date">In progress</div><div><h3>PhD in Computing</h3><div class="org">Queen's University · School of Computing</div><p>Research focus: medical vision-language models, long-tailed learning, and interpretable AI, building on XAI in vision and NLP.</p></div></article>
+    <article class="entry"><div class="entry-date">Conferred</div><div><h3>MSc in Cybersecurity</h3><div class="org">Queen's University · School of Computing</div><p>Thesis: <em>Passive Liveness Detection using Depth and rPPG for Face Presentation Attack Detection.</em></p></div></article>
+  </div></div>
+  <div class="cv-section"><h2>Research</h2><div class="entry-list">
+    <article class="entry"><div class="entry-date">Sep 2022 → Present</div><div><h3>Computing Graduate Research Fellow</h3><div class="org">BAM Lab · Queen's School of Computing</div><ul><li>Cross-affiliation with the Faculty of Health Sciences (Prof. Zulkernine, Dr. Cofie): automated EPA evaluation from assessor notes.</li><li>Cross-affiliation with the School of Rehabilitation Therapy (Prof. Zulkernine, Assoc. Prof. Fayed): domain-specific BERT literature filtration across 8,000 RCT articles, reported at 95% specificity.</li><li>Contributed to grant preparation.</li></ul></div></article>
+    <article class="entry"><div class="entry-date">Oct 2022 → Feb 2023</div><div><h3>ML Research Intern · MITACS Accelerate</h3><div class="org">Pfizer Canada</div><ul><li>Extracted, transformed, and analyzed unstructured EHRs using Pandas, MySQL, NumPy, scikit-learn, and seaborn to model Alzheimer's patient cohorts.</li><li>Used k-means clustering and logistic regression for clinical-characteristics analysis.</li><li>Contributed to a paper accepted in the Journal of Primary Care &amp; Community Health (2025).</li></ul></div></article>
+  </div></div>
+  <div class="cv-section"><h2>Industry &amp; research software</h2><div class="entry-list">
+    <article class="entry"><div class="entry-date">Sep 2025 → Dec 2025</div><div><h3>Associate Machine Learning Engineer · Intern</h3><div class="org">EvenUp Law (US)</div><ul><li>Explored GEPA evolutionary prompt optimization as an alternative to manual prompt tuning.</li><li>Built a firmwide relevance dataset with LLM-as-judge evaluation and monitored P@k, R@k, and NDCG@k.</li><li>Implemented cross-encoder, listwise, and setwise reranking to improve retrieval metrics.</li></ul></div></article>
+    <article class="entry"><div class="entry-date">Jan 2024 → Dec 2025</div><div><h3>Front-end Developer</h3><div class="org">Smith School of ECE · Queen's University</div><ul><li>Built visualization software for streaming PID-controller data using Python Socket.IO, HTML, CSS, and D3.</li><li>Tool documented in a paper accepted to NFM 2025.</li></ul></div></article>
+    <article class="entry"><div class="entry-date">Aug 2019 → Jul 2022</div><div><h3>Machine Learning Engineer</h3><div class="org">Silicon Orchard Ltd · Dhaka, Bangladesh</div><ul><li>Built an internal HR data analytics tool based on BERT.</li><li>Developed a stylometric authorship attribution algorithm.</li><li>Worked on deep reinforcement-learning recommender systems and speech recognition for smart-home systems.</li></ul></div></article>
+  </div></div>
+  <div class="cv-section"><h2>Teaching</h2><div class="entry-list">
+    <article class="entry"><div class="entry-date">Jan 2023 → Present</div><div><h3>Graduate Teaching Assistant</h3><div class="org">School of Computing · Queen's University</div><p>Marking, proctoring, lab sessions, and office hours across multiple computer-science courses.</p><p><a class="textlink" href="experience.html#teaching-experience">Teaching experience →</a></p></div></article>
+  </div></div>
+  <div class="cv-section"><h2>Service &amp; volunteering</h2><div class="entry-list">
+    <article class="entry"><div class="entry-date">Jan 2025 → Aug 2025</div><div><h3>COMPSA Liaison Officer</h3><div class="org">Graduate Computing Society · Queen's University</div></div></article>
+    <article class="entry"><div class="entry-date">Sep 2024 → Present</div><div><h3>Vice President</h3><div class="org">Queen's Bangladeshi Student Association</div></div></article>
+  </div></div>
+  <div class="cv-section"><h2>Certifications</h2><div class="entry-list">
+    <article class="entry"><div class="entry-date">DeepLearning.AI</div><div><h3>Deep Learning Specialization</h3></div></article>
+    <article class="entry"><div class="entry-date">DeepLearning.AI</div><div><h3>TensorFlow in Practice</h3></div></article>
+  </div></div>
+</div><aside class="cv-aside">
+  <div class="cv-panel"><h2>Toolbelt</h2><div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">BERT / CLIP</span><span class="tag">GradCAM</span><span class="tag">D3</span><span class="tag">Pandas</span><span class="tag">scikit-learn</span><span class="tag">MySQL</span><span class="tag">Socket.IO</span><span class="tag">HTML / CSS</span><span class="tag">LLM-as-judge</span><span class="tag">GEPA</span></div></div>
+  <div class="cv-panel"><h2>References</h2><ul class="simple-list"><li><strong>Dr. Farhana Zulkernine</strong><br>Professor, School of Computing, Queen's University</li><li><strong>Dr. Furkan Alaca</strong><br>Assistant Professor, School of Computing, Queen's University</li><li><strong>Dr. Kishor Datta Gupta</strong><br>Assistant Professor, Clark Atlanta University · CEO, Silicon Orchard Ltd.</li></ul><p>Contact details available on request.</p></div>
+</aside></div></section>
+</main>
+<footer><div class="wrap">
+  <div class="foot"><div>
+    <h2>Nafiz Sadman</h2>
+    <p>PhD Candidate · Queen's University</p>
+    <p>BAM Lab · School of Computing</p>
+  </div><div class="footlinks">
+    <a href="https://scholar.google.com/citations?user=M3FEjQsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a>
+    <a href="https://github.com/Nafiz95" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/nafiz-sadman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href="mailto:sadman.n@queensu.ca">Email ↗</a>
+    <a href="cv.html">Full CV</a>
+  </div></div>
+  <div class="copyright"><span>Kingston, Ontario · © 2026</span><span>Academic research portfolio</span></div>
+</div></footer>
 <script src="assets/site.js"></script>
 </body>
 </html>
